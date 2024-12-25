@@ -1,4 +1,4 @@
-let seqC = {
+let seqC = [
   "main_buildlink_wood_1",
   "main_buildlink_stone_1",
   "main_buildlink_iron_1",
@@ -315,4 +315,4 @@ let seqC = {
   "main_buildlink_hide_8",
   "main_buildlink_hide_9",
   "main_buildlink_hide_10"
-}
+  ]
