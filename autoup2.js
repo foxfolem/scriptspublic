@@ -64,7 +64,6 @@ async function start(){
                             }
                         }
                     }
-                    console.log('Order: ', order);
                     if(Number(up[1]) > nvAtual && order < 5){
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined){
