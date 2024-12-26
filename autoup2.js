@@ -58,7 +58,7 @@ async function start(){
             for(let e = 0; e < vilagesid.length; e++){
                 if(document.querySelector(`.${vilagesid[e]}`) == null){
                     let td = document.createElement('td');
-                    td.className = `.${vilagesid[e]}`
+                    td.className = `${vilagesid[e]}`
                     document.querySelector('#villages').querySelector('tr').appendChild(td)
                 }
                 for (let item of seqC){
