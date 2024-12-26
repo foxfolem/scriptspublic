@@ -43,7 +43,7 @@ async function start(){
     if(game_data.features.Premium.active && window.location.search.includes('mode=buildings')){
         console.log('começou')
         let th = document.createElement('th');
-        th.innerText = 'Proxima'
+        th.innerText = 'Proximo Up'
         document.querySelector('#buildings_table').querySelector('tr').appendChild(th);
         let vilagesid = [];
         let timetotal = 0;
