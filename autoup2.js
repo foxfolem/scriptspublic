@@ -1,4 +1,3 @@
-
 function esperar(){
     return new Promise((res) => {
         let interv = setInterval(() => {
@@ -39,10 +38,12 @@ function getSeq(){
 const timer = (ms) => {
     return new Promise(res => setTimeout(res, ms))
 }
+let data = new Date();
 async function start(){
     if(game_data.features.Premium.active && window.location.search.includes('mode=buildings')){
         console.log('começou')
         let vilagesid = [];
+        let timetotal = 0;
         for(let i = 0; i < document.querySelectorAll('#villages')[0].children.length; i++){
             vilagesid.push(document.querySelectorAll('#villages')[0].children[i].id)
         }
@@ -68,6 +69,9 @@ async function start(){
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined){
                             document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].click();
+                            //let time = document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].attributes.tooltip.textContent.split('Tempo de construção: ')[1].split(':')
+                            //timetotal += (((time[0]*60)*60)*1000) + ((time[1]*60)*1000) + (time[2]*1000)
+                            //setTimeout(()=>{window.location.reload()},timetotal)
                             await esperar2();
                         }else{
                             break;
@@ -75,11 +79,12 @@ async function start(){
                     }
                 }
             }
-            await timer(200);
+            await timer(100);
         }
     }else{
         console.log('Não tem premium!.')
     }
     console.log('Terminou')
 };
+setInterval(()=>{window.location.reload()},3600000)
 start();
