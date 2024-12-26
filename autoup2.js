@@ -42,6 +42,8 @@ let data = new Date();
 async function start(){
     if(game_data.features.Premium.active && window.location.search.includes('mode=buildings')){
         console.log('começou')
+        let th = document.createElement('th');
+        th.innerText = 'Proxima'
         let vilagesid = [];
         let timetotal = 0;
         for(let i = 0; i < document.querySelectorAll('#villages')[0].children.length; i++){
@@ -53,6 +55,11 @@ async function start(){
         await getSeq();
         while(true){
             for(let e = 0; e < vilagesid.length; e++){
+                if(document.querySelector(`.${vilagesid[e]}`) == null){
+                    let td = document.createElement('td');
+                    td.className = `.${vilagesid[e]}`
+                    document.querySelector('#villages').querySelector('tr').appendChild(td)
+                }
                 for (let item of seqC){
                     let up = item.split('_')
                     let order = Number(document.querySelector(`#${vilagesid[e]}`).querySelectorAll('.queue_icon').length)
@@ -66,6 +73,9 @@ async function start(){
                         }
                     }
                     if(Number(up[1]) > nvAtual && order < 5){
+                        if(document.querySelector(`.${vilagesid[e]}`).innerHTML == ''){
+                            document.querySelector(`.${vilagesid[e]}`).innerHTML = `<img src="https://dsbr.innogamescdn.com/asset/61bc21fc/graphic/buildings/${up[0]}.png">`
+                        }
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined){
                             document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].click();
