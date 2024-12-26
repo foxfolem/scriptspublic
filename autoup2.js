@@ -59,7 +59,7 @@ async function start(){
                 if(document.querySelector(`.${vilagesid[e]}`) == null){
                     let td = document.createElement('td');
                     td.className = `${vilagesid[e]}`
-                    document.querySelector('#villages').querySelector('tr').appendChild(td)
+                    document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).appendChild(td)
                 }
                 for (let item of seqC){
                     let up = item.split('_')
