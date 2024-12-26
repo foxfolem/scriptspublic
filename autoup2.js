@@ -44,6 +44,7 @@ async function start(){
         console.log('começou')
         let th = document.createElement('th');
         th.innerText = 'Proxima'
+        document.querySelector('#buildings_table').querySelector('tr').appendChild(th);
         let vilagesid = [];
         let timetotal = 0;
         for(let i = 0; i < document.querySelectorAll('#villages')[0].children.length; i++){
