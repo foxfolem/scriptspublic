@@ -64,7 +64,7 @@ async function start(){
                             }
                         }
                     }
-                    console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
+                    console.log('Order: ', order);
                     if(Number(up[1]) > nvAtual && order < 6){
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined){
