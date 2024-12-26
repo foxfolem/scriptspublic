@@ -58,7 +58,7 @@ async function start(){
                     let nvAtual = Number(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText)
                     for(let i = 0; i < 5; i++){
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`#order_${i}`) != null){
-                            order++
+                            //order++
                             if(document.querySelector(`#${vilagesid[e]}`).querySelector(`#order_${i}`).children[2].children[0].src.includes(up[0])){
                                 nvAtual += 1;
                             }
