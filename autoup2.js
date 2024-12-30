@@ -90,7 +90,7 @@ async function start(){
                     }
                 }
             }
-            await timer(100);
+            await timer(400);
         }
     }else{
         console.log('Não tem premium!.')
