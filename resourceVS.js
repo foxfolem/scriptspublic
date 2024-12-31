@@ -348,10 +348,9 @@ askCoordinate();
 
 function createList() {
     //if list is already made, delete both the older(possibly out of date list), with new one and readd the target and WH limit
-    if ($("#sendResources")[0]) {
+    if ($("#contentRes")[0]) {
+        $("#contentRes")[0].remove();
         $("#sendResources")[0].remove();
-        $("#resourceSender")[0].remove();
-
     }
     //UI creation of the list
     var htmlString = `
