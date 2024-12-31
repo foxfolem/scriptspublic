@@ -341,9 +341,8 @@ function createList() {
     }
     //UI creation of the list
     var htmlString = `
-                <div id="resourceSender">
                 <h4>Status</h4>
-                <div id="resourceSender2">
+                <div id="resourceSender">
                     <table id="Settings" width="600">
                         <thead>
                             <tr>
@@ -371,7 +370,7 @@ function createList() {
                         </tbody>
                     </table>
                     </br>
-                </div></div>`.trim();
+                </div>`.trim();
     //adding the target and WH limit DIV to the page
     uiDiv = document.createElement('div');
     uiDiv.innerHTML = htmlString;
