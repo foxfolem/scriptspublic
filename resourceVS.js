@@ -525,7 +525,9 @@ function checkDistance(x1, y1, x2, y2) {
 }
 
 function askCoordinate() {
-    targetID = window.location.href.split('?village=')[1].split('&')[0]
+    coordinate = game_data.village.coord
+    sessionStorage.setItem("coordinate", coordinate);
+    targetID = coordToId(coordinate);
     //ask for coordinate
     /*var content = `<div style=max-width:1000px;>
     <h2 class="popup_box_header">
