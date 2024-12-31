@@ -342,6 +342,8 @@ function createList() {
     //UI creation of the list
     var htmlString = `
                 <div id="resourceSender">
+                <h4>Status</h4>
+                <div id="resourceSender2">
                     <table id="Settings" width="600">
                         <thead>
                             <tr>
@@ -360,7 +362,7 @@ function createList() {
                                 <input type="text" ID="resPercent" name="resPercent" size="1" align=right>%
                             </td>
                             <td class="sophRowA" margin="5">
-                                <button type="button" ID="button" class="btn-confirm-yes" >${langShinko[2]}</button>
+                                <button type="button" ID="button" class="btn" >${langShinko[2]}</button>
                             </td>
                             <td class="sophRowA">
                                 <button type="button" ID="sendRes" class="btn" name="sendRes" onclick=reDo()> ${langShinko[9]}</button>
@@ -369,7 +371,7 @@ function createList() {
                         </tbody>
                     </table>
                     </br>
-                </div>`.trim();
+                </div></div>`.trim();
     //adding the target and WH limit DIV to the page
     uiDiv = document.createElement('div');
     uiDiv.innerHTML = htmlString;
@@ -377,6 +379,8 @@ function createList() {
     //creating header for the actual list of sends
     htmlCode = `
             <div id="sendResources" border=0>
+            <h4>${langShinko[10]}</h4>
+            <div>
                 <table id="tableSend" width="100%">
                     <tbody id="appendHere">
                         <tr>
@@ -395,6 +399,7 @@ function createList() {
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
             `;
 
@@ -455,7 +460,7 @@ function createList() {
         if (res.wood + res.stone + res.iron != 0 && villagesData[i].id != sendBack[0]) {
             listHTML += `
         <tr ${tempRow} height="40">
-            <td><a href="${villagesData[i].url}" style="color:#40D0E0;">${villagesData[i].name} </a></td>
+            <td><a href="${villagesData[i].url}">${villagesData[i].name} </a></td>
             <td> <a href="" style="color:#40D0E0;">${sendBack[1]}</a> </td>
             <td>${checkDistance(sendBack[5], sendBack[6], villagesData[i].coord.substring(0, 3), villagesData[i].coord.substring(4, 7))}</td>
             <td width="50" style="text-align:center">${res.wood}<span class="icon header wood"> </span></td>
