@@ -164,17 +164,31 @@ if (game_data.locale == "pt_BR") {
 cssClassesSophie = `
 <style>
 .sophRowA {
-background-color: #32353b;
-color: white;
+color: black;
+border-style: solid;
+border-color: #eed9ae;
+border-width: 1px;
+padding-left: 5px;
+padding-right: 5px;
+
 }
 .sophRowB {
-background-color: #36393f;
-color: white;
+color: black;
+border-style: solid;
+border-color: #eed9ae;
+border-width: 1px;
+padding-left: 5px;
+padding-right: 5px;
+
 }
 .sophHeader {
-background-color: #202225;
 font-weight: bold;
-color: white;
+color: black;
+border-style: solid;
+border-color: #eed9ae;
+border-width: 1px;
+padding-left: 5px;
+padding-right: 5px;
 }
 </style>`
 
@@ -333,7 +347,7 @@ $.get(URLReq, function () {
 askCoordinate();
 
 function createList() {
-    //if list is already made, delete both the older(possibly out of date list), with new one and readd the target and WH limit 
+    //if list is already made, delete both the older(possibly out of date list), with new one and readd the target and WH limit
     if ($("#sendResources")[0]) {
         $("#sendResources")[0].remove();
         $("#resourceSender")[0].remove();
@@ -341,35 +355,31 @@ function createList() {
     }
     //UI creation of the list
     var htmlString = `
-                <h4>Status</h4>
+    <div class="vis" style="margin-left: 0; margin-right: 40%">
+    <h4>Status</h4>
                 <div id="resourceSender">
-                    <table id="Settings" width="600">
-                        <thead>
+                    <table id="Settings" width="100%">
                             <tr>
-                                <td class="sophHeader">${langShinko[7]}</td>
-                                <td class="sophHeader">${langShinko[8]}</td>
+                                <td class="sophHeader" colspan="2">${langShinko[7]}</td>
+                                <td class="sophRowA">
+                                <input type="text" ID="coordinateTarget" name="coordinateTarget" size="10" margin="5" align=left>
+                                </td>
                                 <td class="sophHeader"></td>
                                 <td class="sophHeader"></td>
                             </tr>
-                        </tdead>
-                        <tbody>
                         <tr >
-                            <td class="sophRowA">
-                                <input type="text" ID="coordinateTarget" name="coordinateTarget" size="20" margin="5" align=left>
-                            </td>
-                            <td class="sophRowA" align="right">
-                                <input type="text" ID="resPercent" name="resPercent" size="1" align=right>%
+                            <td class="sophHeader" colspan="2">${langShinko[8]}</td>
+                            <td class="sophRowA" align="left">
+                                <input type="text" ID="resPercent" name="resPercent" size="1" align=left>% <button type="button" ID="button" class="btn" >${langShinko[2]}</button>
                             </td>
                             <td class="sophRowA" margin="5">
-                                <button type="button" ID="button" class="btn" >${langShinko[2]}</button>
                             </td>
                             <td class="sophRowA">
                                 <button type="button" ID="sendRes" class="btn" name="sendRes" onclick=reDo()> ${langShinko[9]}</button>
                             </td>
                             </tr>
-                        </tbody>
                     </table>
-                    </br>
+                </div>
                 </div>`.trim();
     //adding the target and WH limit DIV to the page
     uiDiv = document.createElement('div');
@@ -377,14 +387,11 @@ function createList() {
 
     //creating header for the actual list of sends
     htmlCode = `
-            <div id="sendResources" border=0>
+            <div id="sendResources" class="vis" style="margin-left: 0; margin-right: 0">
             <h4>${langShinko[10]}</h4>
             <div>
                 <table id="tableSend" width="100%">
                     <tbody id="appendHere">
-                        <tr>
-                            <td class="sophHeader" colspan=7 width=â€œ550â€ style="text-align:center" >${langShinko[10]}</td>
-                        </tr>
                         <tr>
                             <td class="sophHeader" width="25%" style="text-align:center">${langShinko[11]}</td>
                             <td class="sophHeader" width="25%" style="text-align:center">${langShinko[12]}</td>
@@ -393,7 +400,6 @@ function createList() {
                             <td class="sophHeader" width="10%" style="text-align:center">${langShinko[15]}</td>
                             <td class="sophHeader" width="10%" style="text-align:center">${langShinko[16]}</td>
                             <td class="sophHeader" width="15%">
-                                <font size="1">${langShinko[18]}</font>
                             </td>
                         </tr>
                     </tbody>
@@ -422,10 +428,9 @@ function createList() {
 
     //adding sent so far
 
-    $("#resourceSender").eq(0).prepend(`<table id="playerTarget" width="600">
-    <tbody>
-        <tr>
-            <td class="sophHeader" rowspan="3"><img src="`+ sendBack[2] + `"></td>
+    $("#Settings").eq(0).prepend(`
+        <tr id="playerTarget">
+            <td class="sophHeader" rowspan="3"><center><img src="`+ sendBack[2] + `"></center></td>
             <td class="sophHeader">${langShinko[4]}:</td>
             <td class="sophRowA">`+ sendBack[3] + `</td>
             <td class="sophHeader"><span class="icon header wood"> </span></td>
@@ -443,8 +448,7 @@ function createList() {
             <td class="sophHeader"><span class="icon header iron"> </span></td>
             <td class="sophRowB" id="ironSent"></td>
         </tr>
-    </tbody>
-</table>`);
+`);
 
 
     //creating table rows
@@ -470,8 +474,8 @@ function createList() {
         }
     }
     $("#appendHere").eq(0).append(listHTML);
-    //      redo the rows appearances cause some are ommited 
-    //      (if you target yourself, you dont want to have the option to send to your own village from that same village, 
+    //      redo the rows appearances cause some are ommited
+    //      (if you target yourself, you dont want to have the option to send to your own village from that same village,
     //      wont work and breaks script, or if you would have to send 0 res, breaks script too)
     sortTableTest(2);
     formatTable();
@@ -485,10 +489,10 @@ function sendResource(sourceID, targetID, woodAmount, stoneAmount, ironAmount, r
     setTimeout(function () { $("#" + rowNr)[0].remove(); $(':button[id^="sendResources"]').prop('disabled', false); $(":button,#sendResources")[3].focus(); if($("#tableSend tr").length<=2)
     {
         alert("Finished sending!");
-        
+
         if($(".btn-pp").length>0)
         {
-            $(".btn-pp").remove(); 
+            $(".btn-pp").remove();
         }
         throw Error("Done.");
     }}, 200);
@@ -508,7 +512,7 @@ function sendResource(sourceID, targetID, woodAmount, stoneAmount, ironAmount, r
        },
         !1
     );
-    
+
 }
 
 function numberWithCommas(x) {
