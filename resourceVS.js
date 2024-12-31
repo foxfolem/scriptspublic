@@ -463,9 +463,9 @@ function createList() {
         if (res.wood + res.stone + res.iron != 0 && villagesData[i].id != sendBack[0]) {
             listHTML += `
         <tr ${tempRow} height="40">
-            <td><a href="${villagesData[i].url}">${villagesData[i].name} </a></td>
-            <td> <a href="">${sendBack[1]}</a> </td>
-            <td>${checkDistance(sendBack[5], sendBack[6], villagesData[i].coord.substring(0, 3), villagesData[i].coord.substring(4, 7))}</td>
+            <td style="text-align:center"><a href="${villagesData[i].url}">${villagesData[i].name} </a></td>
+            <td style="text-align:center"> <a href="">${sendBack[1]}</a> </td>
+            <td style="text-align:center">${checkDistance(sendBack[5], sendBack[6], villagesData[i].coord.substring(0, 3), villagesData[i].coord.substring(4, 7))}</td>
             <td width="50" style="text-align:center">${res.wood}<span class="icon header wood"> </span></td>
             <td width="50" style="text-align:center">${res.stone}<span class="icon header stone"> </span></td>
             <td width="50" style="text-align:center">${res.iron}<span class="icon header iron"> </span></td>
