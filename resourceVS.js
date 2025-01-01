@@ -354,7 +354,7 @@ function createList() {
     }
     //UI creation of the list
     var htmlString = `
-    <div class="vis" style="margin-left: 0; margin-right: 40%">
+    <div id="contentRes" class="vis" style="margin-left: 0; margin-right: 40%">
     <h4>Status</h4>
                 <div id="resourceSender">
                     <table id="Settings" width="100%">
