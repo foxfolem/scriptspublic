@@ -487,8 +487,6 @@ function sendResource(sourceID, targetID, woodAmount, stoneAmount, ironAmount, r
     $(':button[id^="sendResources"]').prop('disabled', true);
     setTimeout(function () { $("#" + rowNr)[0].remove(); $(':button[id^="sendResources"]').prop('disabled', false); $(":button,#sendResources")[3].focus(); if($("#tableSend tr").length<=2)
     {
-        alert("Finished sending!");
-
         if($(".btn-pp").length>0)
         {
             $(".btn-pp").remove();
