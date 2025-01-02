@@ -73,7 +73,6 @@ async function start(){
                             }
                         }
                     }
-                    while(true){
                         if(Number(up[1]) > nvAtual && order < 5){
                             if(document.querySelector(`.${vilagesid[e]}`).innerHTML == ''){
                                 document.querySelector(`.${vilagesid[e]}`).innerHTML = `<img src="https://dsbr.innogamescdn.com/asset/61bc21fc/graphic/buildings/${up[0]}.png">`
@@ -90,7 +89,6 @@ async function start(){
                                 break;
                             }
                         }
-                    }
                 }
             }
             await timer(200);
