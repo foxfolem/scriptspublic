@@ -91,7 +91,6 @@ async function start(){
                             }
                         }
                     }
-                    break;
                 }
             }
             await timer(200);
