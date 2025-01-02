@@ -84,13 +84,14 @@ async function start(){
                             //timetotal += (((time[0]*60)*60)*1000) + ((time[1]*60)*1000) + (time[2]*1000)
                             //setTimeout(()=>{window.location.reload()},timetotal)
                             await esperar2();
+                            await timer(400);
                         }else{
                             break;
                         }
                     }
                 }
             }
-            await timer(400);
+            await timer(200);
         }
     }else{
         console.log('Não tem premium!.')
