@@ -61,7 +61,7 @@ async function start(){
                     td.className = `${vilagesid[e]}`
                     document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).appendChild(td)
                 }
-                for (let item of seqC){
+                for await (let item of seqC){
                     let up = item.split('_')
                     let order = Number(document.querySelector(`#${vilagesid[e]}`).querySelectorAll('.queue_icon').length)
                     let nvAtual = Number(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText)
