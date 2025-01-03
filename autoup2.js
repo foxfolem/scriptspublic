@@ -79,7 +79,7 @@ async function start(){
                             document.querySelector(`.${vilagesid[e]}`).innerHTML = `<img src="https://dsbr.innogamescdn.com/asset/61bc21fc/graphic/buildings/${up[0]}.png">`
                         }
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
-                        if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined){
+                        if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined && document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].classList.value != 'hidden'){
                             console.log('CLICANDO')
                             document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].click();
                             //let time = document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].attributes.tooltip.textContent.split('Tempo de construção: ')[1].split(':')
