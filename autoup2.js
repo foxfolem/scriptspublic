@@ -80,6 +80,7 @@ async function start(){
                         }
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined){
+                            console.log('CLICANDO')
                             document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].click();
                             //let time = document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].attributes.tooltip.textContent.split('Tempo de construção: ')[1].split(':')
                             //timetotal += (((time[0]*60)*60)*1000) + ((time[1]*60)*1000) + (time[2]*1000)
