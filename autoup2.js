@@ -56,7 +56,6 @@ async function start(){
         await getSeq();
         while(true){
             for(let e = 0; e < vilagesid.length; e++){
-                console.log('Vila: '+ vilagesid[e])
                 if(document.querySelector(`.${vilagesid[e]}`) == null){
                     let td = document.createElement('td');
                     td.className = `${vilagesid[e]}`
@@ -88,7 +87,6 @@ async function start(){
                             await esperar2();
                             await timer(200);
                         }else{
-                            console.log('BREAK')
                             break;
                         }
                     }
