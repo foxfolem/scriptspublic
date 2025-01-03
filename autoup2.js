@@ -50,7 +50,7 @@ async function start(){
         await esperar();
         await getSeq();
         while(true){
-            for await (let e = 0; e < vilagesid.length; e++){
+            for(let e = 0; e < vilagesid.length; e++){
                 for await (let item of seqC){
                     let up = item.split('_')
                     let order = Number(document.querySelector(`#${vilagesid[e]}`).querySelectorAll('.queue_icon').length)
