@@ -1,1 +1,1422 @@
-const _0x1b686f=_0x20ae;(function(_0x1066d6,_0x1bb5c5){const _0x156350=_0x20ae,_0x3e87a3=_0x1066d6();while(!![]){try{const _0x256133=-parseInt(_0x156350(0x314))/0x1+-parseInt(_0x156350(0x1f5))/0x2*(parseInt(_0x156350(0x304))/0x3)+parseInt(_0x156350(0x26f))/0x4+-parseInt(_0x156350(0x299))/0x5+parseInt(_0x156350(0x2d4))/0x6*(-parseInt(_0x156350(0x260))/0x7)+-parseInt(_0x156350(0x263))/0x8+parseInt(_0x156350(0x1b9))/0x9*(parseInt(_0x156350(0x238))/0xa);if(_0x256133===_0x1bb5c5)break;else _0x3e87a3['push'](_0x3e87a3['shift']());}catch(_0x6c7cbe){_0x3e87a3['push'](_0x3e87a3['shift']());}}}(_0x30bc,0x5d5b1));const _0x1fc360=(function(){let _0x538fc5=!![];return function(_0x14f234,_0x4a0b4a){const _0x1ab9c9=_0x538fc5?function(){const _0x3bb0b9=_0x20ae;if(_0x4a0b4a){const _0x1a6726=_0x4a0b4a[_0x3bb0b9(0x222)](_0x14f234,arguments);return _0x4a0b4a=null,_0x1a6726;}}:function(){};return _0x538fc5=![],_0x1ab9c9;};}()),_0xa8635f=_0x1fc360(this,function(){const _0xcd7ee8=_0x20ae,_0x578bee=function(){const _0x4c230f=_0x20ae;let _0x2a1153;try{_0x2a1153=Function(_0x4c230f(0x311)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x58d072){_0x2a1153=window;}return _0x2a1153;},_0x35683b=_0x578bee(),_0xab6017=_0x35683b['console']=_0x35683b[_0xcd7ee8(0x288)]||{},_0xc10557=[_0xcd7ee8(0x197),_0xcd7ee8(0x1d2),_0xcd7ee8(0x2db),_0xcd7ee8(0x1e4),'exception','table',_0xcd7ee8(0x2af)];for(let _0x572ecb=0x0;_0x572ecb<_0xc10557['length'];_0x572ecb++){const _0x1dbc97=_0x1fc360[_0xcd7ee8(0x1b0)][_0xcd7ee8(0x2a6)][_0xcd7ee8(0x20b)](_0x1fc360),_0x370544=_0xc10557[_0x572ecb],_0x555f39=_0xab6017[_0x370544]||_0x1dbc97;_0x1dbc97[_0xcd7ee8(0x323)]=_0x1fc360[_0xcd7ee8(0x20b)](_0x1fc360),_0x1dbc97[_0xcd7ee8(0x235)]=_0x555f39[_0xcd7ee8(0x235)][_0xcd7ee8(0x20b)](_0x555f39),_0xab6017[_0x370544]=_0x1dbc97;}});_0xa8635f();let farmgodFox,tempfarm,minimocontrole,maximocontrole;typeof min==_0x1b686f(0x244)?minimocontrole=0x1e:minimocontrole=min;typeof max==_0x1b686f(0x244)?maximocontrole=0x3c:maximocontrole=max;const Min_Tempo_Espera=0xc3500,Max_Tempo_Espera=0xdbba0,desligarRecomp=![];let Etapa=_0x1b686f(0x320),principal,secundario,hora,timerRodando,ss=0x0,recomp;const td=document[_0x1b686f(0x2ae)]('td');let breka,pontos,pontosC,countx,prox,qualquer=![],id=game_data['village']['id'],mundo=game_data[_0x1b686f(0x30c)],tempoFarmgod,farmassist=game_data['features'][_0x1b686f(0x283)][_0x1b686f(0x28f)],premi=game_data['features']['Premium']['active'],Construção_Edificios_Ordem=!![],Construção_Edificios_Quest,botao,botao2,botao3,variavel=!![];function attualiz(){location['reload'](!![]);}function aleatorio(_0x221c44,_0x481655){const _0xa00bbf=_0x1b686f;let _0x5abc93=_0x221c44-_0x481655,_0x55bdce=Math[_0xa00bbf(0x1e3)]()*_0x5abc93;return Math[_0xa00bbf(0x1b2)](parseInt(_0x481655)+_0x55bdce);}function tempoFarm(_0xc7b707){let _0x1ad0c4=_0xc7b707/0x3e8;tempfarm=setInterval(()=>{_0x1ad0c4--,tempoFarmgod=tempoF(_0x1ad0c4*0x3e8);},0x3e8);}function tempoF(_0x1e9208){const _0x4a8ea0=_0x1b686f;var _0x4c2d51=new Date(_0x1e9208)[_0x4a8ea0(0x22d)](),_0x2e787b=new Date(_0x1e9208-_0x1e9208)[_0x4a8ea0(0x22d)](),_0x2864ed=_0x4c2d51-_0x2e787b,_0x38111d=Math[_0x4a8ea0(0x192)](_0x2864ed/(0x3e8*0x3c*0x3c*0x18)),_0x3817ee=Math[_0x4a8ea0(0x192)](_0x2864ed%(0x3e8*0x3c*0x3c*0x18)/(0x3e8*0x3c*0x3c)),_0x48892d=Math[_0x4a8ea0(0x192)](_0x2864ed%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)),_0x3ad989=Math['floor'](_0x2864ed%(0x3e8*0x3c)/0x3e8),_0xf6dddd=Math[_0x4a8ea0(0x192)](_0x2864ed%(0x3e8*0x3c/0x3c)/0x1);_0x3817ee<0xa&&(_0x3817ee='0'+_0x3817ee);_0x48892d<0xa&&(_0x48892d='0'+_0x48892d);_0x3ad989<0xa&&(_0x3ad989='0'+_0x3ad989);if(_0xf6dddd<0x64&&_0xf6dddd>0xa)_0xf6dddd='0'+_0xf6dddd;else _0xf6dddd<0xa&&(_0xf6dddd='00'+_0xf6dddd);return _0x3817ee+':'+_0x48892d+':'+_0x3ad989;}function farmverify(){const _0x5d4f56=_0x1b686f;try{if(premi){if(farmassist){if(farmgodFox){let _0x141083=aleatorio(minimocontrole*0x3c*0x3e8,maximocontrole*0x3c*0x3e8);tempoFarmgod=tempoF(_0x141083),tempoFarm(_0x141083),console[_0x5d4f56(0x197)](_0x5d4f56(0x2fd)+Math[_0x5d4f56(0x1b2)](_0x141083/0x3e8/0x3c)+_0x5d4f56(0x1bc)),setTimeout(()=>{const _0x32eb5f=_0x5d4f56;window['location'][_0x32eb5f(0x1c3)]=_0x32eb5f(0x27a)+mundo+_0x32eb5f(0x286)+id+_0x32eb5f(0x1a8);},_0x141083);}else tempoFarmgod=_0x5d4f56(0x2f8),console[_0x5d4f56(0x197)](_0x5d4f56(0x243)),clearInterval(tempfarm);}else tempoFarmgod=_0x5d4f56(0x1e9),console[_0x5d4f56(0x197)](_0x5d4f56(0x2e5));}else tempoFarmgod=_0x5d4f56(0x226),console[_0x5d4f56(0x197)]('Nao\x20tem\x20Premium.');}catch(_0x5c7f82){console[_0x5d4f56(0x197)](_0x5d4f56(0x1a6),_0x5c7f82);}}function attualiz(){const _0x1cb33e=_0x1b686f;location[_0x1cb33e(0x2e0)](!![]);}countx=JSON[_0x1b686f(0x1d6)](localStorage['getItem'](_0x1b686f(0x2bb))),recomp=JSON[_0x1b686f(0x1d6)](localStorage[_0x1b686f(0x2e1)](_0x1b686f(0x298))),botao=JSON[_0x1b686f(0x1d6)](localStorage[_0x1b686f(0x2e1)](_0x1b686f(0x211))),botao2=JSON[_0x1b686f(0x1d6)](localStorage['getItem'](_0x1b686f(0x291))),botao3=JSON[_0x1b686f(0x1d6)](localStorage[_0x1b686f(0x2e1)]('Farm'));if(countx===null||countx===undefined){let stringJSON=JSON[_0x1b686f(0x1b1)](0x0);localStorage[_0x1b686f(0x23a)](_0x1b686f(0x2bb),stringJSON),countx=JSON[_0x1b686f(0x1d6)](localStorage[_0x1b686f(0x2e1)](_0x1b686f(0x2bb)));}else countx=JSON[_0x1b686f(0x1d6)](localStorage['getItem'](_0x1b686f(0x2bb)));if(recomp===null||recomp===undefined){let stringJSON=JSON[_0x1b686f(0x1b1)](0x0);localStorage[_0x1b686f(0x23a)]('Recomp',stringJSON),recomp=JSON['parse'](localStorage[_0x1b686f(0x2e1)](_0x1b686f(0x298)));}function verifica1(){const _0x475e0c=_0x1b686f;botao=JSON['parse'](localStorage[_0x475e0c(0x2e1)]('Ordem'));if(botao==='Não'){let _0x43b632=JSON['stringify']('Sim');localStorage[_0x475e0c(0x23a)](_0x475e0c(0x211),_0x43b632),Construção_Edificios_Ordem=!![],document['querySelector'](_0x475e0c(0x2be))[_0x475e0c(0x2d5)]=_0x475e0c(0x206),document['querySelector']('.ordemBtn')[_0x475e0c(0x239)]=_0x475e0c(0x237),console[_0x475e0c(0x197)](Construção_Edificios_Ordem);}else{let _0x32bfb7=JSON[_0x475e0c(0x1b1)](_0x475e0c(0x26d));localStorage['setItem'](_0x475e0c(0x211),_0x32bfb7),Construção_Edificios_Ordem=![],document[_0x475e0c(0x264)]('.ordemBtn')[_0x475e0c(0x2d5)]=_0x475e0c(0x26d),document[_0x475e0c(0x264)](_0x475e0c(0x2be))[_0x475e0c(0x239)]=_0x475e0c(0x1b6),console['log'](Construção_Edificios_Ordem);}}function verifica2(){const _0xb064fe=_0x1b686f;botao2=JSON[_0xb064fe(0x1d6)](localStorage[_0xb064fe(0x2e1)](_0xb064fe(0x291)));if(botao2===_0xb064fe(0x26d)){let _0x32510f=JSON[_0xb064fe(0x1b1)](_0xb064fe(0x206));localStorage['setItem'](_0xb064fe(0x291),_0x32510f),Construção_Edificios_Quest=!![],document['querySelector'](_0xb064fe(0x230))['innerText']=_0xb064fe(0x206),document[_0xb064fe(0x264)]('.questBtn')['title']=_0xb064fe(0x1a9),console[_0xb064fe(0x197)](Construção_Edificios_Quest);}else{let _0x2b0fff=JSON[_0xb064fe(0x1b1)](_0xb064fe(0x26d));localStorage[_0xb064fe(0x23a)](_0xb064fe(0x291),_0x2b0fff),Construção_Edificios_Quest=![],document[_0xb064fe(0x264)](_0xb064fe(0x230))[_0xb064fe(0x2d5)]=_0xb064fe(0x26d),document['querySelector'](_0xb064fe(0x230))['title']='Priorizar\x20Quest:\x20Desligado',console[_0xb064fe(0x197)](Construção_Edificios_Quest);}}const Visualização_Geral=_0x1b686f(0x1ba),Edificio_Principal=_0x1b686f(0x289);function startScript(){'use strict';const _0x32593e=_0x1b686f;console[_0x32593e(0x197)](_0x32593e(0x2ef)),Etapa==_0x32593e(0x320)&&executarEtapa1(),Construção_Edificios_Quest===![]&&console[_0x32593e(0x197)]('Quest\x20Desligado,\x20Construção\x20Normal.');}function executarEtapa1(){const _0x4f029d=_0x1b686f;let _0x1100dd=getEvoluir_vilas();if(_0x1100dd==Edificio_Principal)principal=setInterval(async function(){const _0xebbbab=_0x20ae;if(Construção_Edificios_Ordem&&Construção_Edificios_Quest)document[_0xebbbab(0x264)](_0xebbbab(0x27b))[_0xebbbab(0x191)]=_0xebbbab(0x1ef);else{if(Construção_Edificios_Ordem)document['querySelector'](_0xebbbab(0x27b))[_0xebbbab(0x191)]='Upando\x20em\x20ordem,\x20Proximo\x20up:\x20'+prox;else Construção_Edificios_Quest?document[_0xebbbab(0x264)](_0xebbbab(0x27b))[_0xebbbab(0x191)]=_0xebbbab(0x31a):document[_0xebbbab(0x264)](_0xebbbab(0x27b))[_0xebbbab(0x191)]=_0xebbbab(0x27d);}if(Construção_Edificios_Quest){if(document[_0xebbbab(0x30b)]('.current-quest')[_0xebbbab(0x233)]!==0x0)for(let _0x233d6f of document[_0xebbbab(0x30b)]('.current-quest')){_0x233d6f[_0xebbbab(0x306)]['querySelector'](_0xebbbab(0x277))!==null&&(_0x233d6f[_0xebbbab(0x306)][_0xebbbab(0x264)](_0xebbbab(0x277))[_0xebbbab(0x2d5)]==='A\x20fazenda\x20é\x20pequena\x20demais.'&&($(_0xebbbab(0x20f))['find'](_0xebbbab(0x1be))[0x0][_0xebbbab(0x276)]>0x0&&$('#main_buildrow_farm')[_0xebbbab(0x25a)](_0xebbbab(0x1be))[0x0][_0xebbbab(0x1df)]>0x0&&(document['querySelector']('#main_buildrow_farm')[_0xebbbab(0x264)]('.btn-build')[_0xebbbab(0x324)](),await loading()))),_0x233d6f[_0xebbbab(0x276)]>0x0&&_0x233d6f[_0xebbbab(0x1df)]>0x0&&$(_0xebbbab(0x275))[_0xebbbab(0x25a)]('b')[_0xebbbab(0x233)]===0x0&&(console[_0xebbbab(0x197)](_0xebbbab(0x2f5)),document[_0xebbbab(0x264)](_0xebbbab(0x27b))[_0xebbbab(0x191)]='Upando\x20quests.',_0x233d6f[_0xebbbab(0x324)](),await loading());}document[_0xebbbab(0x30b)]('.current-quest')[_0xebbbab(0x233)]===0x0&&$(_0xebbbab(0x275))[_0xebbbab(0x25a)]('b')['length']===0x0&&(document['querySelector'](_0xebbbab(0x27b))['innerHTML']=_0xebbbab(0x2a9)+prox+'.',Proxima_Construção());}else $('#buildqueue')[_0xebbbab(0x25a)]('b')[_0xebbbab(0x233)]===0x0&&Proxima_Construção();document['querySelector'](_0xebbbab(0x200))!==null&&document[_0xebbbab(0x264)](_0xebbbab(0x28c))['click']();},0x3e8);else _0x1100dd==Visualização_Geral&&document['getElementById'](_0x4f029d(0x1d1))[_0x4f029d(0x23b)][0x0]['children'][0x0][_0x4f029d(0x324)]();}function Secundario(){secundario=setInterval(function(){const _0x5c2f32=_0x20ae;var _0x294777='',_0x2cefbd=$(_0x5c2f32(0x1b8))['find']('tr')['eq'](0x1);_0x294777=_0x2cefbd['find']('td')['eq'](0x1)[_0x5c2f32(0x25a)](_0x5c2f32(0x1c1))['eq'](0x0)['text']()[_0x5c2f32(0x2ea)]('\x20')[_0x5c2f32(0x217)]('')[_0x5c2f32(0x2ea)]('\x0a')[_0x5c2f32(0x217)]('');var _0x470d42=_0x294777['split'](':');if(document[_0x5c2f32(0x264)](_0x5c2f32(0x1bd))!=null){if(document['querySelector'](_0x5c2f32(0x1bd))['style'][_0x5c2f32(0x2ce)]!=_0x5c2f32(0x294)){if(document[_0x5c2f32(0x264)](_0x5c2f32(0x29f))[_0x5c2f32(0x19e)]['display']=='none'){console[_0x5c2f32(0x197)](_0x5c2f32(0x313)),countx++;let _0x3b6c25=JSON[_0x5c2f32(0x1b1)](countx);localStorage[_0x5c2f32(0x23a)]('Countx',_0x3b6c25),_0x2cefbd[_0x5c2f32(0x25a)]('td')['eq'](0x2)[_0x5c2f32(0x25a)]('a')['eq'](0x2)[_0x5c2f32(0x324)]();}else console['log']('Aguardando\x20servidor.');}}if(desligarRecomp==![]){if(countx>=0x4){if(document['querySelector'](_0x5c2f32(0x22f))===null){document[_0x5c2f32(0x264)](_0x5c2f32(0x27b))[_0x5c2f32(0x191)]=_0x5c2f32(0x2f2),Questlines['showDialog'](0x0,_0x5c2f32(0x249)),countx=0x0;let _0xba44c5=JSON['stringify'](countx);localStorage[_0x5c2f32(0x23a)](_0x5c2f32(0x2bb),_0xba44c5);}}}document[_0x5c2f32(0x264)](_0x5c2f32(0x22f))!==null&&(variavel&&(console['log']('Popup\x20de\x20Missões\x20Aberta.'),console[_0x5c2f32(0x197)](_0x5c2f32(0x2a7)),verifQuest(),variavel=![]));},0x12c);}async function teste(){const _0x34a944=_0x1b686f;if(desligarRecomp==![]){if(document['querySelector'](_0x34a944(0x22f))!==null){await loading();while(document[_0x34a944(0x30b)]('.reward-system-claim-button')[_0x34a944(0x233)]!==0x0){for(let _0x9517e2 of document[_0x34a944(0x30b)]('.reward-system-claim-button')){console[_0x34a944(0x197)](_0x34a944(0x30f),_0x9517e2),document['querySelector']('.statusLab')[_0x34a944(0x191)]=_0x34a944(0x1d7),recomp++;let _0xa8a2f6=JSON[_0x34a944(0x1b1)](recomp);localStorage[_0x34a944(0x23a)]('Recomp',_0xa8a2f6),document[_0x34a944(0x264)](_0x34a944(0x1c7))[_0x34a944(0x191)]=_0x34a944(0x1d8)+recomp+_0x34a944(0x2a3),_0x9517e2[_0x34a944(0x324)](),await loading(),await delayS(0x64);}}document[_0x34a944(0x30b)](_0x34a944(0x2ab))[_0x34a944(0x233)]===0x0&&(document['querySelector'](_0x34a944(0x28c))!==null&&document[_0x34a944(0x264)](_0x34a944(0x28c))[_0x34a944(0x324)](),variavel=!![]);}}}function delayS(_0x122daf){return new Promise(_0x560e04=>{setTimeout(()=>{_0x560e04(0x2);},_0x122daf);});}async function loading(){return new Promise(_0x2e8af2=>{let _0x5095fe=setInterval(function(){const _0x10b46b=_0x20ae;document['querySelector'](_0x10b46b(0x29f))[_0x10b46b(0x19e)][_0x10b46b(0x2ce)]===_0x10b46b(0x2f3)?console[_0x10b46b(0x197)](_0x10b46b(0x2ac)):(clearInterval(_0x5095fe),_0x2e8af2(0x2));},0x64);});}async function loading2(){return new Promise(_0x53bfe8=>{let _0x35632b=setInterval(function(){const _0x1d76b4=_0x20ae;document['querySelector'](_0x1d76b4(0x22f))===null?console[_0x1d76b4(0x197)](_0x1d76b4(0x2ac)):(clearInterval(_0x35632b),_0x53bfe8(0x2));},0x64);});}async function verifQuest(){const _0x5267e6=_0x1b686f;await delayS(0x1f4),await loading2();if(document[_0x5267e6(0x264)](_0x5267e6(0x22f))!==null){let _0x3fe50e=document[_0x5267e6(0x264)](_0x5267e6(0x2e8))['querySelectorAll'](_0x5267e6(0x2a5))[_0x5267e6(0x233)];console['log']('Total\x20de\x20Missoes\x20em\x20Progresso!\x20',_0x3fe50e);for(let _0x43cb19 of document['querySelector'](_0x5267e6(0x2e8))[_0x5267e6(0x30b)](_0x5267e6(0x2a5))){console[_0x5267e6(0x197)](_0x5267e6(0x22a),_0x43cb19),_0x43cb19['click'](),await loading(),await delayS(0xc8),console[_0x5267e6(0x197)](_0x5267e6(0x2c3));if(document[_0x5267e6(0x264)](_0x5267e6(0x1ae))!==null){console[_0x5267e6(0x197)](_0x5267e6(0x231)),document[_0x5267e6(0x264)](_0x5267e6(0x256))[_0x5267e6(0x324)](),await loading(),document[_0x5267e6(0x264)]('.statusLab')['innerHTML']=_0x5267e6(0x1d7),recomp++;let _0x3d8522=JSON[_0x5267e6(0x1b1)](recomp);localStorage['setItem'](_0x5267e6(0x298),_0x3d8522),document[_0x5267e6(0x264)]('.recompD')['innerHTML']=_0x5267e6(0x1d8)+recomp+_0x5267e6(0x2a3),await delayS(0x1f4),Questlines[_0x5267e6(0x257)](0x0,'main-tab'),variavel=!![];return;}if(document[_0x5267e6(0x264)]('[class=\x22skip-btn\x20btn\x22]')!==null){if(document[_0x5267e6(0x264)](_0x5267e6(0x2fb))[_0x5267e6(0x276)]>0x0||document[_0x5267e6(0x264)]('[class=\x22skip-btn\x20btn\x22]')['offsetHeight']>0x0){console['log'](_0x5267e6(0x1e0)),document[_0x5267e6(0x264)](_0x5267e6(0x2fb))[_0x5267e6(0x324)](),await loading(),document[_0x5267e6(0x264)]('.statusLab')[_0x5267e6(0x191)]=_0x5267e6(0x30d),await delayS(0x1f4),Questlines[_0x5267e6(0x257)](0x0,'main-tab'),variavel=!![];return;}}_0x3fe50e--,_0x3fe50e>0x0&&console[_0x5267e6(0x197)]('Nada\x20encontrado,\x20Proxima\x20Missao.');}if(document[_0x5267e6(0x30b)](_0x5267e6(0x2ab))[_0x5267e6(0x233)]!==0x0){teste();return;}else document[_0x5267e6(0x30b)](_0x5267e6(0x2ab))['length']===0x0&&document['querySelector'](_0x5267e6(0x22f))!==null&&(document[_0x5267e6(0x264)](_0x5267e6(0x28c))!==null&&document['querySelector']('.popup_box_close')[_0x5267e6(0x324)](),variavel=!![]);console[_0x5267e6(0x197)](_0x5267e6(0x19b)),document[_0x5267e6(0x264)]('.statusLab')[_0x5267e6(0x191)]='Nenhuma\x20recompença\x20disponivel.';}}let delay=Math[_0x1b686f(0x192)](Math[_0x1b686f(0x1e3)]()*(Max_Tempo_Espera-Max_Tempo_Espera)+Min_Tempo_Espera);Construção_Edificios_Ordem===![]&&(qualquer=!![]);if(qualquer){let Evoluir_vilas=getEvoluir_vilas();console[_0x1b686f(0x197)](Evoluir_vilas),setTimeout(function(){const _0x43a408=_0x1b686f;if(Evoluir_vilas==Edificio_Principal)Proxima_Construção();else Evoluir_vilas==Visualização_Geral&&document[_0x43a408(0x23f)](_0x43a408(0x1d1))[_0x43a408(0x23b)][0x0]['children'][0x0]['click']();},delay);}function getEvoluir_vilas(){const _0x426589=_0x1b686f;let _0x1b90f6=window[_0x426589(0x1db)][_0x426589(0x1c3)];if(_0x1b90f6['endsWith'](_0x426589(0x20a)))return Visualização_Geral;else{if(_0x1b90f6[_0x426589(0x24c)]('main')||_0x1b90f6[_0x426589(0x24c)](_0x426589(0x24b)))return Edificio_Principal;}}function _0x20ae(_0x408c9b,_0x4b3eb8){const _0x517e9e=_0x30bc();return _0x20ae=function(_0xa8635f,_0x1fc360){_0xa8635f=_0xa8635f-0x18c;let _0x4f98e6=_0x517e9e[_0xa8635f];return _0x4f98e6;},_0x20ae(_0x408c9b,_0x4b3eb8);}function Proxima_Construção(){const _0x2560a5=_0x1b686f;let _0x58c623=getConstrução_proximo_edificio();if(document[_0x2560a5(0x264)]('#loading_content')[_0x2560a5(0x19e)][_0x2560a5(0x2ce)]==_0x2560a5(0x294)){if(_0x58c623!==undefined){if(document['querySelector'](_0x2560a5(0x18e))===null){if(document[_0x2560a5(0x264)](_0x2560a5(0x29f))[_0x2560a5(0x19e)][_0x2560a5(0x2ce)]==_0x2560a5(0x294)){console[_0x2560a5(0x197)](countx+_0x2560a5(0x2d6)+_0x58c623),_0x58c623[_0x2560a5(0x324)](),countx++;let _0x342f06=JSON[_0x2560a5(0x1b1)](countx);localStorage[_0x2560a5(0x23a)](_0x2560a5(0x2bb),_0x342f06);}else console[_0x2560a5(0x197)]('Aguardando\x20servidor.');}else attualiz();}}else console[_0x2560a5(0x197)]('Aguardando...\x20Ms:'+Timing['offset_to_server']);}function getConstrução_proximo_edificio(){const _0x11b694=_0x1b686f;let _0x213bd0=document[_0x11b694(0x278)](_0x11b694(0x1cd)),_0x4302d6=getConstrução_Edifcios_Serie(),_0x5b1bb7;while(_0x5b1bb7===undefined&&_0x4302d6[_0x11b694(0x233)]>0x0){var _0x4c9295=_0x4302d6[_0x11b694(0x1c4)]();prox=_0x4c9295[_0x11b694(0x225)](_0x11b694(0x21b),'');if(_0x213bd0['hasOwnProperty'](_0x4c9295)){let _0x24cd2c=document[_0x11b694(0x23f)](_0x4c9295);var _0x3fce4b=_0x24cd2c[_0x11b694(0x276)]>0x0||_0x24cd2c[_0x11b694(0x1df)]>0x0;let _0x3e4cc4;for(let _0x2c3af1=0x0;_0x2c3af1<=0x1e;_0x2c3af1++){document['getElementById']('main_buildlink_farm_'+_0x2c3af1)!==null&&(_0x3e4cc4=document[_0x11b694(0x23f)]('main_buildlink_farm_'+_0x2c3af1));}if(_0x3fce4b)_0x5b1bb7=_0x24cd2c;else(_0x3e4cc4[_0x11b694(0x276)]>0x0||_0x3e4cc4[_0x11b694(0x1df)]>0x0)&&(_0x5b1bb7=_0x3e4cc4);if(Construção_Edificios_Ordem)break;}}return _0x5b1bb7;}function getConstrução_Edifcios_Serie(){const _0x52df39=_0x1b686f;var _0x5bfa2f=[];return _0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x18c)),_0x5bfa2f['push'](_0x52df39(0x207)),_0x5bfa2f['push'](_0x52df39(0x30a)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wood_2'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x300)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_main_2'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wood_3'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x318)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1f7)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_barracks_1'),_0x5bfa2f['push'](_0x52df39(0x223)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c4)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x305)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1ab)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2a0)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x261)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1a0)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1e6)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x21a)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x29b)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_main_5'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x29a)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x210)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_market_1'),_0x5bfa2f['push'](_0x52df39(0x2d3)),_0x5bfa2f['push'](_0x52df39(0x1ff)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1ad)),_0x5bfa2f['push'](_0x52df39(0x245)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x30e)),_0x5bfa2f['push'](_0x52df39(0x1e5)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x242)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b0)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x271)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2f4)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1eb)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x21e)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1ce)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x212)),_0x5bfa2f['push'](_0x52df39(0x290)),_0x5bfa2f['push'](_0x52df39(0x248)),_0x5bfa2f['push'](_0x52df39(0x268)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x287)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wood_9'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2e9)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1d3)),_0x5bfa2f['push']('main_buildlink_stone_10'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x31d)),_0x5bfa2f['push'](_0x52df39(0x270)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x26c)),_0x5bfa2f['push'](_0x52df39(0x252)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x224)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_iron_8'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_storage_8'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2bc)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x190)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1b7)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x28d)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_iron_11'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1e8)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2dc)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_farm_3'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x18d)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x214)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1fb)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x279)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x202)),_0x5bfa2f['push'](_0x52df39(0x266)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x309)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2da)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x23d)),_0x5bfa2f['push'](_0x52df39(0x240)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x26e)),_0x5bfa2f['push'](_0x52df39(0x227)),_0x5bfa2f['push'](_0x52df39(0x1a2)),_0x5bfa2f['push'](_0x52df39(0x2ec)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c1)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2bf)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b4)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2d9)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_smith_3'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2d0)),_0x5bfa2f['push'](_0x52df39(0x208)),_0x5bfa2f['push'](_0x52df39(0x2a8)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x251)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1ec)),_0x5bfa2f['push'](_0x52df39(0x1fe)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_main_10'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2fe)),_0x5bfa2f['push']('main_buildlink_stable_2'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2ed)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_storage_11'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x236)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x25c)),_0x5bfa2f['push'](_0x52df39(0x1c6)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_storage_12'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2e3)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c0)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x281)),_0x5bfa2f['push'](_0x52df39(0x29d)),_0x5bfa2f['push'](_0x52df39(0x1ac)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x199)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x295)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x20e)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wall_8'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x267)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x285)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1fd)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1ee)),_0x5bfa2f['push'](_0x52df39(0x1b5)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x195)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2a4)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_smith_6'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2cd)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2ad)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2fa)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1da)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1cc)),_0x5bfa2f['push']('main_buildlink_main_13'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_farm_13'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2f7)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_market_4'),_0x5bfa2f['push'](_0x52df39(0x220)),_0x5bfa2f['push']('main_buildlink_market_6'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b6)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1a7)),_0x5bfa2f['push'](_0x52df39(0x322)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x274)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x24e)),_0x5bfa2f['push'](_0x52df39(0x1bb)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2f0)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_barracks_10'),_0x5bfa2f['push']('main_buildlink_smith_9'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_smith_10'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2eb)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1d5)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1a5)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x26a)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2e6)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b8)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1a4)),_0x5bfa2f['push']('main_buildlink_storage_18'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_storage_19'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_barracks_11'),_0x5bfa2f['push'](_0x52df39(0x2f9)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_iron_15'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x253)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_farm_15'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1c2)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wall_10'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x28b)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x316)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wall_11'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x247)),_0x5bfa2f['push'](_0x52df39(0x2ee)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1f4)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x27e)),_0x5bfa2f['push'](_0x52df39(0x213)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x198)),_0x5bfa2f['push']('main_buildlink_market_10'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wood_18'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stone_18'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1bf)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x258)),_0x5bfa2f['push'](_0x52df39(0x2c7)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_farm_19'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2cb)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wall_13'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x253)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_iron_17'),_0x5bfa2f['push'](_0x52df39(0x2a2)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x292)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1f1)),_0x5bfa2f['push'](_0x52df39(0x25d)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_main_20'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x254)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x219)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_storage_22'),_0x5bfa2f['push'](_0x52df39(0x25e)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x302)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1de)),_0x5bfa2f['push'](_0x52df39(0x2b5)),_0x5bfa2f['push']('main_buildlink_smith_17'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x280)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wood_21'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stone_21'),_0x5bfa2f['push'](_0x52df39(0x21d)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x282)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_garage_4'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stable_8'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_garage_5'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stable_9'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x27f)),_0x5bfa2f['push'](_0x52df39(0x21c)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x221)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_farm_21'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x228)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2dd)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x25f)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stone_21'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x205)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b9)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x23e)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b3)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2d8)),_0x5bfa2f['push'](_0x52df39(0x272)),_0x5bfa2f['push']('main_buildlink_iron_21'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_iron_22'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x269)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x21f)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2e4)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2ff)),_0x5bfa2f['push'](_0x52df39(0x229)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1aa)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1fa)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x194)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x312)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x19a)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wood_24'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b7)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c5)),_0x5bfa2f['push'](_0x52df39(0x1a1)),_0x5bfa2f['push'](_0x52df39(0x2e2)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x246)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x293)),_0x5bfa2f['push'](_0x52df39(0x308)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x23c)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c8)),_0x5bfa2f['push'](_0x52df39(0x1b4)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x29c)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x209)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x203)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1d9)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1f2)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x216)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1e1)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x204)),_0x5bfa2f['push'](_0x52df39(0x1d0)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x315)),_0x5bfa2f['push'](_0x52df39(0x2aa)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stone_26'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1ea)),_0x5bfa2f['push'](_0x52df39(0x193)),_0x5bfa2f['push'](_0x52df39(0x310)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2cf)),_0x5bfa2f['push']('main_buildlink_farm_27'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x307)),_0x5bfa2f['push'](_0x52df39(0x2d2)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1dd)),_0x5bfa2f['push'](_0x52df39(0x259)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stable_12'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x196)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2f1)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1f3)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x273)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stable_14'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1cb)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x31c)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x321)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_barracks_17'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_barracks_18'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1b3)),_0x5bfa2f['push'](_0x52df39(0x1f9)),_0x5bfa2f['push'](_0x52df39(0x1c8)),_0x5bfa2f['push']('main_buildlink_stone_27'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_iron_26'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_wood_28'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stone_28'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x25b)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2de)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x241)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x284)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2d1)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2fc)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1f6)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x317)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1a3)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_iron_29'),_0x5bfa2f['push']('main_buildlink_iron_30'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2f6)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x29e)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x19f)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x250)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_barracks_25'),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_garage_11'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x319)),_0x5bfa2f['push']('main_buildlink_garage_12'),_0x5bfa2f['push']('main_buildlink_stable_17'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x303)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1ed)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x297)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_stable_19'),_0x5bfa2f['push'](_0x52df39(0x1ca)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x232)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1c5)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x24f)),_0x5bfa2f['push']('main_buildlink_main_25'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x265)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2ca)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x255)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1cf)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_main_30'),_0x5bfa2f['push']('main_buildlink_market_18'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x24a)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2ba)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c6)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c2)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2a1)),_0x5bfa2f['push']('main_buildlink_market_23'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1c9)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2c9)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_market_25'),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2b1)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x1c0)),_0x5bfa2f[_0x52df39(0x24d)](_0x52df39(0x2cc)),_0x5bfa2f['push'](_0x52df39(0x2d7)),_0x5bfa2f[_0x52df39(0x24d)]('main_buildlink_hide_10'),_0x5bfa2f;}document[_0x1b686f(0x264)]('.shadedBG')[_0x1b686f(0x26b)](createEle('td',undefined,_0x1b686f(0x2df))),document[_0x1b686f(0x264)](_0x1b686f(0x28e))[_0x1b686f(0x191)]=html(),document[_0x1b686f(0x264)](_0x1b686f(0x28e))[_0x1b686f(0x19e)][_0x1b686f(0x19d)]='margin-top:\x20200px;'+_0x1b686f(0x20c),recomp=JSON[_0x1b686f(0x1d6)](localStorage['getItem'](_0x1b686f(0x298)));(recomp===null||recomp===undefined)&&(recomp=0x0);ss=JSON[_0x1b686f(0x1d6)](localStorage[_0x1b686f(0x2e1)]('TimerRodando2'));function timer1(_0x2086f7){const _0x11fb29=_0x1b686f,_0x553053=new Date(_0x2086f7*0x3e8);return _0x553053[_0x11fb29(0x1f0)](_0x11fb29(0x19c),{'hour12':![],'timeZone':_0x11fb29(0x1f8)});}(pontos!==null||pontos!==undefined)&&(pontos=JSON['parse'](localStorage[_0x1b686f(0x2e1)]('PontosComeco')),pontosC=parseInt(document[_0x1b686f(0x264)](_0x1b686f(0x1fc))[_0x1b686f(0x191)])-pontos,document['querySelector'](_0x1b686f(0x31b))[_0x1b686f(0x191)]='<h5>'+pontosC+'</h5>');if(pontos===null||pontos===undefined){pontos=parseInt(document[_0x1b686f(0x264)](_0x1b686f(0x1fc))[_0x1b686f(0x191)]);let stringJSON2=JSON[_0x1b686f(0x1b1)](pontos);localStorage['setItem'](_0x1b686f(0x1af),stringJSON2),pontosC=parseInt(document['querySelector'](_0x1b686f(0x1fc))[_0x1b686f(0x191)])-pontos,document['querySelector'](_0x1b686f(0x31b))[_0x1b686f(0x191)]=_0x1b686f(0x1d8)+pontosC+_0x1b686f(0x2a3);}function inicarTimer(){hora=setInterval(function(){const _0x13cdfa=_0x20ae;ss++,timerRodando=JSON[_0x13cdfa(0x1b1)](ss),localStorage[_0x13cdfa(0x23a)](_0x13cdfa(0x2b2),timerRodando),document[_0x13cdfa(0x264)]('.StatusLab')[_0x13cdfa(0x191)]=_0x13cdfa(0x215),document[_0x13cdfa(0x264)]('.tempoD')[_0x13cdfa(0x191)]=_0x13cdfa(0x1d8)+tempoFarmgod+_0x13cdfa(0x2a3),document['querySelector'](_0x13cdfa(0x301))[_0x13cdfa(0x19e)]['cssText']+=_0x13cdfa(0x2bd),(pontos!==null||pontos!==undefined)&&(pontos=JSON[_0x13cdfa(0x1d6)](localStorage[_0x13cdfa(0x2e1)]('PontosComeco')),pontosC=parseInt(document[_0x13cdfa(0x264)]('#rank_points')[_0x13cdfa(0x2d5)][_0x13cdfa(0x225)]('.',''))-pontos,document[_0x13cdfa(0x264)](_0x13cdfa(0x31b))[_0x13cdfa(0x191)]=_0x13cdfa(0x1d8)+pontosC+_0x13cdfa(0x2a3));},0x3e8);}let htm=_0x1b686f(0x20d);document[_0x1b686f(0x264)](_0x1b686f(0x22b))[_0x1b686f(0x296)](_0x1b686f(0x324),function(){const _0x3cb77f=_0x1b686f;document[_0x3cb77f(0x264)](_0x3cb77f(0x1e7))[_0x3cb77f(0x26b)](createEle('div',htm,_0x3cb77f(0x262))),createClose();});function createClose(){const _0x526237=_0x1b686f;document[_0x526237(0x264)]('.popup_box_close')[_0x526237(0x296)]('click',function(){const _0xec0bd8=_0x526237;document[_0xec0bd8(0x264)](_0xec0bd8(0x18f))[_0xec0bd8(0x22c)]();});}function html(){const _0xa22f21=_0x1b686f;let _0x559db2=_0xa22f21(0x201)+tempoFarmgod+'</h5></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22text-align:\x20center;\x20width:\x2025px;\x22><img\x20src=\x22/graphic//buildings/market.png\x22\x20title=\x22Total\x20de\x20pontos\x20recebidos\x20des\x20de\x20iniciar.\x22></img></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22pontosD\x22\x20style=\x22text-align:\x20center;\x20width:\x2060px;\x22><h5>'+pontosC+_0xa22f21(0x31e)+recomp+_0xa22f21(0x27c);return _0x559db2;}function createEle(_0x5aded2,_0xf08df7='',_0x491333,_0x5d11fd){const _0x1f796e=_0x1b686f;let _0x1a01a4=document['createElement'](_0x5aded2);_0x1a01a4[_0x1f796e(0x191)]=_0xf08df7;if(_0x491333!==undefined)_0x1a01a4[_0x1f796e(0x325)]=_0x491333;if(_0x5d11fd!==undefined)_0x1a01a4[_0x1f796e(0x239)]=_0x5d11fd;return _0x1a01a4;}document['querySelector']('.iniciarBtn')[_0x1b686f(0x296)](_0x1b686f(0x324),function(){const _0x29865a=_0x1b686f;let _0x1cb9e9=JSON[_0x29865a(0x1d6)](localStorage[_0x29865a(0x2e1)](_0x29865a(0x28a))),_0x1ccc13=JSON[_0x29865a(0x1b1)](0x1);localStorage['setItem']('Estado',_0x1ccc13),verifica();}),document['querySelector']('.pausarBtn')[_0x1b686f(0x296)](_0x1b686f(0x324),function(){const _0x144551=_0x1b686f;let _0x5cbb5=JSON[_0x144551(0x1b1)](0x0);localStorage[_0x144551(0x23a)](_0x144551(0x28a),_0x5cbb5),clearInterval(principal),clearInterval(secundario),verifica();}),document[_0x1b686f(0x264)]('.pararBtn')[_0x1b686f(0x296)](_0x1b686f(0x324),function(){verifica3();}),document[_0x1b686f(0x264)](_0x1b686f(0x2be))[_0x1b686f(0x296)](_0x1b686f(0x324),function(){verifica1();}),document[_0x1b686f(0x264)]('.questBtn')['addEventListener'](_0x1b686f(0x324),function(){verifica2();});function verifica3(){const _0x4f1067=_0x1b686f;botao3=JSON[_0x4f1067(0x1d6)](localStorage['getItem'](_0x4f1067(0x2e7)));if(botao3===_0x4f1067(0x26d))try{farmgodFox=!![];let _0x5bbcae=JSON[_0x4f1067(0x1b1)](_0x4f1067(0x206));localStorage['setItem'](_0x4f1067(0x2e7),_0x5bbcae),document[_0x4f1067(0x264)](_0x4f1067(0x1d4))['innerText']='Sim',document[_0x4f1067(0x264)](_0x4f1067(0x1d4))[_0x4f1067(0x239)]=_0x4f1067(0x1dc),farmverify();}catch{console[_0x4f1067(0x197)]('Error:\x20Variavel\x20farmgodFox\x20nao\x20definida.');}else try{farmgodFox=![];let _0x90728b=JSON['stringify'](_0x4f1067(0x26d));localStorage[_0x4f1067(0x23a)](_0x4f1067(0x2e7),_0x90728b),document['querySelector'](_0x4f1067(0x1d4))[_0x4f1067(0x2d5)]=_0x4f1067(0x26d),document[_0x4f1067(0x264)](_0x4f1067(0x1d4))['title']='Farm\x20Desativado',farmverify();}catch{console[_0x4f1067(0x197)](_0x4f1067(0x22e));}}function verifica(){const _0x3032c1=_0x1b686f;if(localStorage['getItem'](_0x3032c1(0x28a))==='1')startScript(),inicarTimer(),Secundario(),document[_0x3032c1(0x264)](_0x3032c1(0x301))[_0x3032c1(0x191)]=_0x3032c1(0x215),document[_0x3032c1(0x264)](_0x3032c1(0x301))[_0x3032c1(0x19e)][_0x3032c1(0x19d)]+='color:\x20green;';else localStorage['getItem'](_0x3032c1(0x28a))==='0'&&(document['querySelector']('.StatusLab')[_0x3032c1(0x191)]=_0x3032c1(0x234),document[_0x3032c1(0x264)](_0x3032c1(0x301))[_0x3032c1(0x19e)][_0x3032c1(0x19d)]+=_0x3032c1(0x1e2),clearInterval(hora));}if(botao===undefined||botao===null||botao==='Sim'){Construção_Edificios_Ordem=!![];let stringJSON=JSON[_0x1b686f(0x1b1)]('Sim');localStorage[_0x1b686f(0x23a)](_0x1b686f(0x211),stringJSON),document[_0x1b686f(0x264)]('.ordemBtn')[_0x1b686f(0x2d5)]=_0x1b686f(0x206),document[_0x1b686f(0x264)]('.ordemBtn')[_0x1b686f(0x239)]=_0x1b686f(0x237);}else botao===_0x1b686f(0x26d)&&(Construção_Edificios_Ordem=![],document[_0x1b686f(0x264)](_0x1b686f(0x2be))[_0x1b686f(0x2d5)]=_0x1b686f(0x26d),document[_0x1b686f(0x264)](_0x1b686f(0x2be))[_0x1b686f(0x239)]='Construir\x20Qualquer\x20Edificio\x20Disponivel');function _0x30bc(){const _0x37c115=['Upando\x20sem\x20ordem,\x20priorizando\x20quest.','.pontosD','main_buildlink_garage_10','main_buildlink_wood_11','</h5></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22text-align:\x20center;\x20width:\x2025px;\x22><img\x20src=\x22/graphic//buildings/market.png\x22\x20title=\x22Total\x20de\x20recompensas\x20recebida.\x22></img></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22recompD\x22\x20style=\x22text-align:\x20center\x22><h5>','Farm\x20Desativado','Etapa_1','main_buildlink_stable_15','main_buildlink_stone_16','__proto__','click','classList','main_buildlink_wood_1','main_buildlink_farm_4','.error','.popup_box_container','main_buildlink_iron_10','innerHTML','floor','main_buildlink_storage_29','main_buildlink_barracks_15','main_buildlink_barracks_9','main_buildlink_garage_8','log','main_buildlink_smith_12','main_buildlink_main_11','main_buildlink_farm_22','Nenhuma\x20Recompensa\x20Disponivel.','pt-BR','cssText','style','main_buildlink_barracks_24','main_buildlink_iron_3','main_buildlink_wood_25','main_buildlink_wall_5','main_buildlink_barracks_23','main_buildlink_stable_7','main_buildlink_garage_3','FarmGod,\x20Inexistente!','main_buildlink_wood_16','&screen=am_farm','Priorizar\x20Quest:\x20Ligado','main_buildlink_stable_10','main_buildlink_wood_4','main_buildlink_storage_13','main_buildlink_storage_6','.quest-complete-btn','PontosComeco','constructor','stringify','round','main_buildlink_barracks_19','main_buildlink_farm_24','main_buildlink_barracks_8','Construir\x20Qualquer\x20Edificio\x20Disponivel','main_buildlink_wood_13','[id=\x22buildqueue\x22]','9116136MpTrxV','OVERVIEW_VIEW','main_buildlink_stone_17','\x20minutos.','.btn-instant-free','.btn-build','main_buildlink_smith_13','main_buildlink_hide_7','span','main_buildlink_farm_16','href','shift','main_buildlink_main_23','main_buildlink_farm_12','.recompD','main_buildlink_wood_27','main_buildlink_hide_5','main_buildlink_garage_15','main_buildlink_main_22','main_buildlink_storage_17','btn\x20btn-build','main_buildlink_iron_4','main_buildlink_main_29','main_buildlink_storage_28','l_main','warn','main_buildlink_wood_10','.pararBtn','main_buildlink_garage_2','parse','Pegando\x20recompença.','<h5>','main_buildlink_market_13','main_buildlink_storage_16','location','Farm\x20Ativado','main_buildlink_farm_30','main_buildlink_stone_20','offsetHeight','Pulando\x20Missao\x20Desnecessaria.','main_buildlink_wall_19','color:\x20red;','random','error','main_buildlink_statue_1','main_buildlink_wood_5','#ds_body','main_buildlink_storage_9','Not\x20FarmAssist','main_buildlink_iron_25','main_buildlink_wood_7','main_buildlink_main_8','main_buildlink_stable_18','main_buildlink_barracks_7','Upando\x20em\x20ordem\x20priorizando\x20quests','toLocaleTimeString','main_buildlink_main_18','main_buildlink_market_14','main_buildlink_main_21','main_buildlink_market_7','250kNobiX','main_buildlink_wood_30','main_buildlink_main_3','UTC','main_buildlink_barracks_20','main_buildlink_stable_11','main_buildlink_iron_12','#rank_points','main_buildlink_barracks_6','main_buildlink_main_9','main_buildlink_storage_5','#popup_box_push_notification_prompt','<td\x20class=\x22opcoestd\x20content-border\x20border-frame-gold-red\x22\x20style=\x22margin-top:\x20200px;\x20position:\x20absolute;\x22>\x0a\x20\x20\x20\x20\x20\x20<table\x20class=\x22vis\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tbody><tr\x20class=\x22border-frame-gold-red\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22text-align:\x20center;\x20padding-top:\x205px;\x20padding-bottom:\x202px;\x20width:\x20290px\x22\x20class=\x22avisos\x22\x20colspan=\x226\x22><h3>[Auto\x20Up]</h3></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22text-align:\x20center;\x20width:\x205px;\x22><span\x20class=\x22icon\x20header\x20time\x22\x20title=\x22Tempo\x20até\x20ir\x20pro\x20farm.\x22></span></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22tempoD\x22\x20style=\x22text-align:\x20center;\x20width:\x20120px;\x22><h5>','main_buildlink_main_7','main_buildlink_market_12','main_buildlink_storage_27','main_buildlink_wood_22','Sim','main_buildlink_stone_1','main_buildlink_smith_5','main_buildlink_market_11','Visualização\x20Geral','bind','position:\x20absolute;','<div\x20class=\x22popup_box\x20show\x22\x20id=\x22popup_box_twcheese-scavenge-preferences-popup\x22\x20style=\x22width:\x20366px;\x22>\x0a\x20\x20\x20\x20<a\x20class=\x22popup_box_close\x20tooltip-delayed\x22\x20href=\x22#\x22\x20data-title=\x22Fechado\x20::\x20atalho\x20de\x20teclado:\x20<b>Esc</b>\x22>&nbsp;</a>\x0a\x20\x20\x20\x20<div\x20class=\x22popup_box_content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22qrcode\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>Donate\x20-\x20Pix</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://lh3.googleusercontent.com/pw/ADCreHe_PtDQ7eaDxh_gU2TW5-We9tMWcmAEqQkWbGYGFSkAZHYuOz2_IHiGaSoi4JHpQhuE5mEnNoaaYmHiiy2tBgKyuV4cNEivqtGedlOU6HkVMNmvkn-_-e5fPgiHdn7hHuMQf6itQSvT3oeq-1q7qJw=w300-h301-s-no-gm?authuser=0\x22\x20width=\x22366\x22\x20heigth=\x22366\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div></div></div><div\x20class=\x22fader\x22></div>','main_buildlink_wall_7','#main_buildrow_farm','main_buildlink_wall_1','Ordem','main_buildlink_iron_5','main_buildlink_market_9','main_buildlink_farm_5','<h5>RODANDO</h5>','main_buildlink_storage_26','join','Priorizar\x20Quest:\x20Desligado.','main_buildlink_storage_21','main_buildlink_stone_5','main_buildlink_','main_buildlink_wall_14','main_buildlink_barracks_13','main_buildlink_stone_7','main_buildlink_smith_19','main_buildlink_market_5','main_buildlink_wall_15','apply','main_buildlink_storage_2','main_buildlink_storage_7','replace','Not\x20Premium','main_buildlink_wall_4','main_buildlink_storage_24','main_buildlink_garage_6','Clicando\x20em\x20','.donate1','remove','getTime','Error:\x20Variavel\x20farmgodFox\x20nao\x20definida.','.quest-popup-container','.questBtn','Recebendo\x20Recompesa\x20de\x20Missao.','main_buildlink_stable_20','length','<h5>PAUSADO</h5>','toString','main_buildlink_farm_10','Construir\x20em\x20Ordem','20nCKNXz','title','setItem','children','main_buildlink_wall_18','main_buildlink_farm_7','main_buildlink_storage_25','getElementById','main_buildlink_wall_2','main_buildlink_wood_29','main_buildlink_hide_2','FarmGod\x20Desativado.','undefined','main_buildlink_barracks_2','main_buildlink_iron_24','main_buildlink_farm_18','main_buildlink_wood_8','main-tab','main_buildlink_market_19','main#','endsWith','push','main_buildlink_wood_17','main_buildlink_main_24','main_buildlink_market_17','main_buildlink_market_3','main_buildlink_stone_12','main_buildlink_iron_16','main_buildlink_storage_20','main_buildlink_main_28','[class=\x22btn\x20btn-confirm-yes\x20status-btn\x20quest-complete-btn\x22]','showDialog','main_buildlink_wood_19','main_buildlink_garage_7','find','main_buildlink_barracks_21','main_buildlink_farm_11','main_buildlink_main_19','main_buildlink_storage_23','main_buildlink_wood_21','7IRPkCf','main_buildlink_iron_2','popup_box_container','1062192zAPYUA','querySelector','main_buildlink_main_26','main_buildlink_barracks_4','main_buildlink_wall_9','main_buildlink_stone_8','main_buildlink_smith_18','main_buildlink_stable_4','appendChild','main_buildlink_wood_12','Não','main_buildlink_wall_3','1690176CfuOVL','main_buildlink_stone_11','main_buildlink_wood_6','main_buildlink_iron_20','main_buildlink_garage_9','main_buildlink_main_15','#buildqueue','offsetWidth','.inactive','getElementsByClassName','main_buildlink_main_6','https://','.statusLab','</h5></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20colspan=\x226\x22\x20style=\x22text-align:\x20center;\x20padding:\x2010px;\x20width:\x20270px\x22><label\x20class=\x22StatusLab\x22><h5>PARADO</h5></label></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20colspan=\x226\x22\x20style=\x22text-align:\x20center;\x20padding-bottom:\x205px\x22><label\x20class=\x22statusLab\x22>...</label></td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22text-align:\x20center;\x20padding:\x2010px;\x22\x20colspan=\x226\x22>\x0a\x20\x20\x20\x20<button\x20class=\x22iniciarBtn\x20btn\x22\x20style=\x22margin-right:\x2010px;\x22>Iniciar</button>\x0a\x20\x20\x20\x20<button\x20class=\x22pausarBtn\x20btn\x22\x20style=\x22margin-right:\x2010px;\x22>Pausar</button>\x0a\x20\x20\x20\x20<button\x20class=\x22pararBtn\x20btn\x22\x20style=\x22margin-right:\x2010px;\x22>Sim</button>\x0a\x20\x20\x20\x20<button\x20class=\x22ordemBtn\x20btn\x22\x20style=\x22margin-right:\x2010px;\x22>Sim</button>\x0a\x20\x20\x20\x20<button\x20class=\x22questBtn\x20btn\x22\x20title=\x22Priorizar\x20Quest:\x20Desligado.\x22>Não</button>\x0a\x20\x20\x20\x20<br><br>\x0a\x20\x20\x20\x20<span\x20style=\x22float:\x20right;\x20font-size:\x20xx-small;\x20font-weight:\x20normal;\x22>Updated\x20by\x20WFox:\x20v1.2</span>\x0a\x20\x20\x20\x20<span\x20style=\x22float:\x20left;\x20font-size:\x20xx-small;\x20font-weight:\x20normal;\x22><a\x20href=\x22#\x22\x20class=\x22donate1\x22>Donate</a></span>\x0a</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tbody></table>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</td>','Upando\x20qualquer\x20edificio\x20disponivel.','main_buildlink_market_8','main_buildlink_farm_20','main_buildlink_iron_18','main_buildlink_wood_15','main_buildlink_barracks_14','FarmAssistent','main_buildlink_stone_29','main_buildlink_storage_14','.tribalwars.com.br/game.php?village=','main_buildlink_iron_7','console','HEADQUARTERS_VIEW','Estado','main_buildlink_farm_17','.popup_box_close','main_buildlink_stone_13','.opcoestd','active','main_buildlink_iron_6','Quests','main_buildlink_main_17','main_buildlink_wall_16','none','main_buildlink_wall_6','addEventListener','main_buildlink_garage_14','Recomp','2043540TJGpZS','main_buildlink_smith_1','main_buildlink_main_4','main_buildlink_farm_25','main_buildlink_stone_15','main_buildlink_market_16','#loading_content','main_buildlink_stone_4','main_buildlink_hide_4','main_buildlink_smith_15','</h5>','main_buildlink_storage_15','.quest-link','prototype','Startando\x20Verificações.','main_buildlink_market_2','Nenhuma\x20quest,\x20Proximo\x20up:\x20','main_buildlink_wood_26','.reward-system-claim-button','Loading..','main_buildlink_smith_8','createElement','trace','main_buildlink_hide_3','main_buildlink_hide_6','TimerRodando2','main_buildlink_wood_23','main_buildlink_farm_9','main_buildlink_smith_16','main_buildlink_main_14','main_buildlink_stone_24','main_buildlink_stable_6','main_buildlink_stone_22','main_buildlink_market_20','Countx','main_buildlink_iron_9','color:\x20green;','.ordemBtn','main_buildlink_farm_8','main_buildlink_stone_14','main_buildlink_iron_14','main_buildlink_market_22','Verificando\x20Itens.','main_buildlink_farm_2','main_buildlink_iron_23','main_buildlink_market_21','main_buildlink_stone_19','main_buildlink_farm_23','main_buildlink_market_24','main_buildlink_main_27','main_buildlink_smith_14','main_buildlink_hide_8','main_buildlink_smith_7','display','main_buildlink_farm_26','main_buildlink_smith_4','main_buildlink_barracks_22','main_buildlink_farm_29','main_buildlink_storage_4','3419802pJjkgt','innerText','Clicked\x20on\x20','main_buildlink_hide_9','main_buildlink_stone_23','main_buildlink_smith_2','main_buildlink_farm_6','info','main_buildlink_storage_10','main_buildlink_iron_19','main_buildlink_iron_27','opcoestd\x20content-border\x20border-frame-gold-red','reload','getItem','main_buildlink_stone_25','main_buildlink_wood_14','main_buildlink_smith_20','Nao\x20tem\x20Farm\x20Assitente.','main_buildlink_stable_5','Farm','.questline-list','main_buildlink_stone_9','split','main_buildlink_garage_1','main_buildlink_iron_13','main_buildlink_stable_3','main_buildlink_wall_12','--\x20Script\x20do\x20Tribal\x20Wars\x20ativado\x20--','main_buildlink_main_16','main_buildlink_stable_13','Recompença\x20disponivel.','inline','main_buildlink_stone_6','Upando\x20Quests','main_buildlink_market_15','main_buildlink_farm_14','FarmGod\x20OFF','main_buildlink_barracks_12','main_buildlink_main_12','[class=\x22skip-btn\x20btn\x22]','main_buildlink_iron_28','Vai\x20farmar\x20em:\x20','main_buildlink_stable_1','main_buildlink_snob_1','main_buildlink_stone_2','.StatusLab','main_buildlink_wood_20','main_buildlink_garage_13','13395kGhIVa','main_buildlink_storage_3','parentElement','main_buildlink_farm_28','main_buildlink_wall_17','main_buildlink_barracks_5','main_buildlink_iron_1','querySelectorAll','world','Pulando\x20quest\x20desnecessaria.','main_buildlink_barracks_3','Pegando\x20Recompenças\x20Em\x20','main_buildlink_storage_30','return\x20(function()\x20','main_buildlink_barracks_16','Completar\x20Grátis','396393gdjjfi','main_buildlink_wall_20','main_buildlink_smith_11','main_buildlink_stone_30','main_buildlink_stone_3','main_buildlink_stable_16'];_0x30bc=function(){return _0x37c115;};return _0x30bc();}if(botao2===undefined||botao2===null){Construção_Edificios_Quest=![];let stringJSON=JSON[_0x1b686f(0x1b1)](_0x1b686f(0x26d));localStorage[_0x1b686f(0x23a)](_0x1b686f(0x291),stringJSON),document[_0x1b686f(0x264)]('.questBtn')[_0x1b686f(0x2d5)]=_0x1b686f(0x26d),document['querySelector'](_0x1b686f(0x230))[_0x1b686f(0x239)]=_0x1b686f(0x218);}else botao2===_0x1b686f(0x206)&&(Construção_Edificios_Quest=!![],document[_0x1b686f(0x264)](_0x1b686f(0x230))[_0x1b686f(0x2d5)]=_0x1b686f(0x206),document[_0x1b686f(0x264)]('.questBtn')['title']='Priorizar\x20Quest:\x20Ligado.');if(botao3===undefined||botao3===null)try{farmgodFox=!![];let stringJSON=JSON[_0x1b686f(0x1b1)]('Sim');localStorage[_0x1b686f(0x23a)](_0x1b686f(0x2e7),stringJSON),document['querySelector'](_0x1b686f(0x1d4))['innerText']=_0x1b686f(0x206),document['querySelector'](_0x1b686f(0x1d4))[_0x1b686f(0x239)]=_0x1b686f(0x1dc),farmverify();}catch{console[_0x1b686f(0x197)](_0x1b686f(0x22e));}else{if(botao3===_0x1b686f(0x26d))try{farmgodFox=![],document[_0x1b686f(0x264)](_0x1b686f(0x1d4))[_0x1b686f(0x2d5)]=_0x1b686f(0x26d),document[_0x1b686f(0x264)](_0x1b686f(0x1d4))[_0x1b686f(0x239)]=_0x1b686f(0x31f),farmverify();}catch{console[_0x1b686f(0x197)](_0x1b686f(0x22e));}else{if(botao3===_0x1b686f(0x206))try{farmgodFox=!![];let stringJSON=JSON[_0x1b686f(0x1b1)](_0x1b686f(0x206));localStorage[_0x1b686f(0x23a)](_0x1b686f(0x2e7),stringJSON),document[_0x1b686f(0x264)](_0x1b686f(0x1d4))[_0x1b686f(0x2d5)]=_0x1b686f(0x206),document[_0x1b686f(0x264)](_0x1b686f(0x1d4))[_0x1b686f(0x239)]=_0x1b686f(0x1dc),farmverify();}catch{console[_0x1b686f(0x197)](_0x1b686f(0x22e));}}}verifica();
+/*##############################################
+Logica inicial de Programação obtida, atraves de um tutorial
+      Denominado "Os 5 primeiros dias - Modo Novato"
+              Imagens Também do Mesmo
+                 Autoria : senson
+https://forum.tribalwars.com.br/index.php?threads/os-5-primeiros-dias-modo-novato.334845/#post-3677800
+##############################################*/
+
+let farmgodFox;
+let tempfarm;
+let minimocontrole;
+let maximocontrole;
+if(typeof min == 'undefined'){
+    minimocontrole = 30;
+}else{
+    minimocontrole = min;
+}
+if(typeof max == 'undefined'){
+    maximocontrole = 60;
+}else{
+    maximocontrole = max;
+}
+
+//*************************** CONFIGURAÇÃO ***************************//
+// Escolha Tempo de espera mínimo e máximo entre ações (em milissegundos)
+const Min_Tempo_Espera= 800000;
+const Max_Tempo_Espera = 900000;
+const desligarRecomp = false;
+
+// Etapa_1: Upar O bot automaticamente em Série Edificios
+let Etapa = "Etapa_1";
+let principal;
+let secundario;
+let hora;
+let timerRodando;
+let ss = 0;
+let recomp;
+const td = document.createElement('td');
+let breka;
+let pontos;
+let pontosC;
+let countx;
+let prox;
+let qualquer = false;
+let id = game_data.village.id
+let mundo = game_data.world
+let tempoFarmgod;
+let farmassist = game_data.features.FarmAssistent.active;
+let premi = game_data.features.Premium.active;
+
+// Escolha se você deseja que o bot enfileire os edifícios na ordem definida (= true) ou
+// assim que um prédio estiver disponível para a fila de construção (= false)
+let Construção_Edificios_Ordem = true;
+let Construção_Edificios_Quest;
+let botao;
+let botao2;
+let botao3;
+let variavel = true;
+
+function attualiz() {
+    location.reload(true);
+}
+
+function aleatorio(superior,inferior) {
+    let numPosibilidades = superior - inferior
+    let aleat = Math.random() * numPosibilidades
+    return Math.round(parseInt(inferior) + aleat)
+}
+
+function tempoFarm(mudar){
+      let ss = mudar/1000
+      tempfarm = setInterval(()=>{
+            ss--
+            tempoFarmgod = tempoF(ss*1000)
+      },1000)
+}
+
+function tempoF(datair){
+    var dead = new Date(datair).getTime();
+    var now = new Date(datair-datair).getTime();
+    var t = dead - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    var mile = Math.floor(t%((1000*60)/60)/1)
+    if(hours < 10){
+        hours = '0'+hours
+    }
+    if(minutes < 10){
+        minutes = '0'+minutes
+    }
+    if(seconds < 10){
+        seconds = '0'+seconds
+    }
+    if(mile < 100 && mile > 10){
+        mile = '0'+mile
+    }else if(mile < 10){
+        mile = '00'+mile
+    }
+    return `${hours}:${minutes}:${seconds}`
+}
+function farmverify(){
+    try{
+        if(premi){
+            if(farmassist){
+                if(farmgodFox){
+                    let mudar = aleatorio(minimocontrole*60*1000,maximocontrole*60*1000);
+                    tempoFarmgod = tempoF(mudar)
+                    tempoFarm(mudar);
+                    console.log('Vai farmar em: '+ Math.round((mudar/1000)/60) + ' minutos.')
+                    setTimeout(()=>{
+                        window.location.href = `https://${mundo}.tribalwars.com.br/game.php?village=${id}&screen=am_farm`
+                    },mudar)
+                }else{
+                    tempoFarmgod = 'FarmGod OFF'
+                    console.log('FarmGod Desativado.')
+                    clearInterval(tempfarm)
+                }
+            }else{
+                tempoFarmgod = 'Not FarmAssist'
+                console.log('Nao tem Farm Assitente.')
+            }
+        }else{
+            tempoFarmgod = 'Not Premium'
+            console.log('Nao tem Premium.')
+        }
+    }
+    catch(e){
+        console.log('FarmGod, Inexistente!',e)
+    }
+}
+
+
+function attualiz() {
+    location.reload(true);
+}
+
+countx = JSON.parse(localStorage.getItem('Countx'));
+recomp = JSON.parse(localStorage.getItem('Recomp'));
+botao = JSON.parse(localStorage.getItem('Ordem'));
+botao2 = JSON.parse(localStorage.getItem('Quests'));
+botao3 = JSON.parse(localStorage.getItem('Farm'));
+
+if(countx === null || countx === undefined){
+    let stringJSON = JSON.stringify(0);
+    localStorage.setItem('Countx', stringJSON);
+    countx = JSON.parse(localStorage.getItem('Countx'));
+}else{
+    countx = JSON.parse(localStorage.getItem('Countx'));
+}
+
+if(recomp === null || recomp === undefined){
+    let stringJSON = JSON.stringify(0);
+    localStorage.setItem('Recomp', stringJSON);
+    recomp = JSON.parse(localStorage.getItem('Recomp'));
+}
+
+function verifica1(){
+    botao = JSON.parse(localStorage.getItem('Ordem'));
+    if(botao === 'Não'){
+        let stringJSON = JSON.stringify('Sim');
+        localStorage.setItem('Ordem', stringJSON);
+        Construção_Edificios_Ordem = true;
+        document.querySelector('.ordemBtn').innerText = 'Sim'
+        document.querySelector('.ordemBtn').title = 'Construir em Ordem'
+        console.log(Construção_Edificios_Ordem)
+    }else{
+        let stringJSON = JSON.stringify('Não');
+        localStorage.setItem('Ordem', stringJSON);
+        Construção_Edificios_Ordem = false;
+        document.querySelector('.ordemBtn').innerText = 'Não'
+        document.querySelector('.ordemBtn').title = 'Construir Qualquer Edificio Disponivel'
+        console.log(Construção_Edificios_Ordem)
+    }
+}
+function verifica2(){
+    botao2 = JSON.parse(localStorage.getItem('Quests'));
+    if(botao2 === 'Não'){
+        let stringJSON = JSON.stringify('Sim');
+        localStorage.setItem('Quests', stringJSON);
+        Construção_Edificios_Quest = true;
+        document.querySelector('.questBtn').innerText = 'Sim'
+        document.querySelector('.questBtn').title = 'Priorizar Quest: Ligado'
+        console.log(Construção_Edificios_Quest)
+    }else{
+        let stringJSON = JSON.stringify('Não');
+        localStorage.setItem('Quests', stringJSON);
+        Construção_Edificios_Quest = false;
+        document.querySelector('.questBtn').innerText = 'Não'
+        document.querySelector('.questBtn').title = 'Priorizar Quest: Desligado'
+        console.log(Construção_Edificios_Quest)
+    }
+}
+
+
+//*************************** /CONFIGURAÇÃO ***************************//
+
+// Constantes (NÃO DEVE SER ALTERADAS)
+const Visualização_Geral = "OVERVIEW_VIEW";
+const Edificio_Principal = "HEADQUARTERS_VIEW";
+
+function startScript() {
+    'use strict';
+
+    console.log("-- Script do Tribal Wars ativado --");
+
+    if (Etapa == "Etapa_1"){
+        executarEtapa1();
+    }
+    if(Construção_Edificios_Quest === false){
+        console.log('Quest Desligado, Construção Normal.')
+    }
+
+}
+
+// Etapa 1: Construção
+function executarEtapa1(){
+    let Evoluir_vilas = getEvoluir_vilas();
+    //console.log(Evoluir_vilas);
+    if (Evoluir_vilas == Edificio_Principal){
+        principal = setInterval(async function(){
+            // construir qualquer edificio custeável, se possível
+            if(Construção_Edificios_Ordem && Construção_Edificios_Quest){
+                document.querySelector('.statusLab').innerHTML = 'Upando em ordem priorizando quests';
+            }else if(Construção_Edificios_Ordem){
+                document.querySelector('.statusLab').innerHTML = `Upando em ordem, Proximo up: ${prox}`;
+            }else if(Construção_Edificios_Quest){
+                document.querySelector('.statusLab').innerHTML = 'Upando sem ordem, priorizando quest.';
+            }else{
+                document.querySelector('.statusLab').innerHTML = 'Upando qualquer edificio disponivel.';
+            }
+            if(Construção_Edificios_Quest){
+                if(document.querySelectorAll('.current-quest').length !== 0){
+                    for(let i of document.querySelectorAll('.current-quest')){
+                        if(i.parentElement.querySelector('.inactive') !== null){
+                            if(i.parentElement.querySelector('.inactive').innerText === 'A fazenda é pequena demais.'){
+                                if($('#main_buildrow_farm').find('.btn-build')[0].offsetWidth > 0 && $('#main_buildrow_farm').find('.btn-build')[0].offsetHeight > 0){
+                                    document.querySelector('#main_buildrow_farm').querySelector('.btn-build').click();
+                                    await loading();
+                                }
+                            }
+                            /*if(i.parentElement.querySelector('.inactive').innerText === 'A fazenda é pequena demais.'){
+                                if($('#main_buildrow_farm').find('.btn-build')[0].offsetWidth > 0 && $('#main_buildrow_farm').find('.btn-build')[0].offsetHeight > 0){
+                                    $('#main_buildrow_farm').find('.btn-build').click();
+                                    await loading();
+                                }
+                            }*/
+                        }
+                        if(i.offsetWidth > 0 && i.offsetHeight > 0 && $('#buildqueue').find('b').length === 0){
+                            console.log('Upando Quests');
+                            document.querySelector('.statusLab').innerHTML = 'Upando quests.';
+                            i.click();
+                            await loading();
+                        }
+                    }
+                }
+                if(document.querySelectorAll('.current-quest').length === 0 && $('#buildqueue').find('b').length === 0){
+                    document.querySelector('.statusLab').innerHTML = `Nenhuma quest, Proximo up: ${prox}.`;
+                    Proxima_Construção();
+                }
+            }else if($('#buildqueue').find('b').length === 0){
+                Proxima_Construção();
+            }
+            if(document.querySelector('#popup_box_push_notification_prompt') !== null){
+                document.querySelector('.popup_box_close').click();
+            }
+        }, 1000);
+    }
+    else if (Evoluir_vilas == Visualização_Geral){
+        // Visualização Geral PG
+        document.getElementById("l_main").children[0].children[0].click();
+    }
+
+}
+function Secundario(){
+    secundario = setInterval(function(){
+
+
+        var text="";
+        var tr=$('[id="buildqueue"]').find('tr').eq(1);
+
+        text=tr.find('td').eq(1).find('span').eq(0).text().split(" ").join("").split("\n").join("");
+        var timeSplit=text.split(':');
+
+        //if(timeSplit[0]*60*60+timeSplit[1]*60+timeSplit[2]*1<3*60-5){
+        if(document.querySelector('.btn-instant-free') != null){
+            if(document.querySelector('.btn-instant-free').style.display != 'none'){
+                if(document.querySelector('#loading_content').style.display == "none"){
+                    console.log("Completar Grátis");
+                    countx++
+                    let stringJSON = JSON.stringify(countx);
+                    localStorage.setItem('Countx', stringJSON);
+                    tr.find('td').eq(2).find('a').eq(2).click();
+                }else{
+                    console.log('Aguardando servidor.')
+                }
+            }
+        }
+
+        //}
+        //missao concluida
+        if(desligarRecomp == false){
+            if(countx >= 4){
+                if(document.querySelector('.quest-popup-container') === null){
+                    document.querySelector('.statusLab').innerHTML = 'Recompença disponivel.';
+                    Questlines.showDialog(0, 'main-tab')
+                    countx = 0;
+                    let stringJSON = JSON.stringify(countx);
+                    localStorage.setItem('Countx', stringJSON);
+                }
+            }
+        }
+        if(document.querySelector('.quest-popup-container') !== null){
+            if(variavel){
+                console.log('Popup de Missões Aberta.')
+                console.log('Startando Verificações.')
+                verifQuest();
+                variavel = false;
+            }
+        }
+    },300);
+}
+async function teste(){
+    if(desligarRecomp == false){
+        if(document.querySelector('.quest-popup-container') !== null){
+            await loading();
+            while(document.querySelectorAll('.reward-system-claim-button').length !== 0){
+                for(let btn of document.querySelectorAll('.reward-system-claim-button')){
+                    console.log('Pegando Recompenças Em ',btn)
+                    document.querySelector('.statusLab').innerHTML = 'Pegando recompença.';
+                    recomp++
+                    let stringJSON = JSON.stringify(recomp);
+                    localStorage.setItem('Recomp', stringJSON);
+                    document.querySelector('.recompD').innerHTML = `<h5>${recomp}</h5>`;
+                    btn.click();
+                    await loading();
+                    await delayS(100)
+                }
+            }
+            if(document.querySelectorAll('.reward-system-claim-button').length === 0){
+                if(document.querySelector('.popup_box_close') !== null){
+                    document.querySelector('.popup_box_close').click();
+                }
+                variavel = true;
+            }
+        }
+    }
+}
+
+//################################################
+//Delay
+function delayS(delayInms) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(2);
+    }, delayInms);
+  });
+}
+
+async function loading() {
+    return new Promise(resolve => {
+        let interval = setInterval(function(){
+            if(document.querySelector('#loading_content').style.display === 'inline'){
+                console.log('Loading..')
+            }else{
+            clearInterval(interval)
+                resolve(2)
+            }
+        },100)
+    });
+}
+async function loading2() {
+    return new Promise(resolve => {
+        let interval = setInterval(function(){
+            if(document.querySelector('.quest-popup-container') === null){
+                console.log('Loading..')
+            }else{
+            clearInterval(interval)
+                resolve(2)
+            }
+        },100)
+    });
+}
+//################################################
+
+async function verifQuest(){
+    await delayS(500);
+    await loading2();
+    //breka = false;
+    if(document.querySelector('.quest-popup-container') !== null){
+        let t = document.querySelector('.questline-list').querySelectorAll('.quest-link').length
+        console.log('Total de Missoes em Progresso! ',t)
+        for(let uls of document.querySelector('.questline-list').querySelectorAll('.quest-link')){
+            console.log('Clicando em ',uls)
+            uls.click();
+            await loading();
+            await delayS(200);
+            console.log('Verificando Itens.')
+                    if(document.querySelector('.quest-complete-btn') !== null){
+                        console.log('Recebendo Recompesa de Missao.')
+                        document.querySelector('[class="btn btn-confirm-yes status-btn quest-complete-btn"]').click();
+                        await loading();
+                        document.querySelector('.statusLab').innerHTML = 'Pegando recompença.';
+                        recomp++
+                        let stringJSON = JSON.stringify(recomp);
+                        localStorage.setItem('Recomp', stringJSON);
+                        document.querySelector('.recompD').innerHTML = `<h5>${recomp}</h5>`;
+                        await delayS(500)
+                        Questlines.showDialog(0, 'main-tab')
+                        variavel = true;
+                        return;
+
+                    }
+                    if(document.querySelector('[class="skip-btn btn"]') !== null){
+                        if(document.querySelector('[class="skip-btn btn"]').offsetWidth > 0 || document.querySelector('[class="skip-btn btn"]').offsetHeight > 0){
+                            console.log('Pulando Missao Desnecessaria.')
+                            document.querySelector('[class="skip-btn btn"]').click();
+                            await loading();
+                            document.querySelector('.statusLab').innerHTML = 'Pulando quest desnecessaria.';
+                            await delayS(500)
+                            Questlines.showDialog(0, 'main-tab')
+                            variavel = true;
+                            return;
+
+                        }
+                    }
+            t--
+            if(t>0){
+                console.log('Nada encontrado, Proxima Missao.')
+            }
+        }
+        if(document.querySelectorAll('.reward-system-claim-button').length !== 0){
+            teste();
+            return;
+        }else if(document.querySelectorAll('.reward-system-claim-button').length === 0 && document.querySelector('.quest-popup-container') !== null){
+            if(document.querySelector('.popup_box_close') !== null){
+                document.querySelector('.popup_box_close').click();
+            }
+            variavel = true;
+        }
+        console.log('Nenhuma Recompensa Disponivel.');
+        document.querySelector('.statusLab').innerHTML = 'Nenhuma recompença disponivel.';
+    }
+}
+
+    let delay = Math.floor(Math.random() * (Max_Tempo_Espera - Max_Tempo_Espera) + Min_Tempo_Espera);
+
+    // Ação do processo
+if(Construção_Edificios_Ordem === false){
+      qualquer = true;
+}
+if(qualquer){
+    let Evoluir_vilas = getEvoluir_vilas();
+    console.log(Evoluir_vilas);
+    setTimeout(function(){
+        if (Evoluir_vilas == Edificio_Principal){
+
+            // construir qualquer edificio custeável, se possível
+            Proxima_Construção();
+
+        }
+        else if (Evoluir_vilas == Visualização_Geral){
+            // Visualização Geral Pag
+            document.getElementById("l_main").children[0].children[0].click();
+
+        }
+    }, delay);
+}
+
+function getEvoluir_vilas(){
+    let currentUrl = window.location.href;
+    if (currentUrl.endsWith('Visualização Geral')){
+        return Visualização_Geral;
+    }
+    else if (currentUrl.endsWith('main') || currentUrl.endsWith('main#')){
+        return Edificio_Principal;
+    }
+}
+
+function Proxima_Construção(){
+    let Construção_proximo_edificio = getConstrução_proximo_edificio();
+    if(document.querySelector('#loading_content').style.display == "none"){
+        if (Construção_proximo_edificio !== undefined){
+            if(document.querySelector('.error') === null){
+                if(document.querySelector('#loading_content').style.display == "none"){
+                    console.log(countx + "Clicked on " + Construção_proximo_edificio);
+                    Construção_proximo_edificio.click();
+                    countx++
+                    let stringJSON = JSON.stringify(countx);
+                    localStorage.setItem('Countx', stringJSON);
+                }else{
+                console.log("Aguardando servidor.")
+                }
+            }else{
+                attualiz()
+            }
+
+        }
+    }else{
+        console.log('Aguardando... Ms:' + Timing.offset_to_server);
+    }
+
+}
+
+function getConstrução_proximo_edificio() {
+    let Clicar_Upar_Edificos = document.getElementsByClassName("btn btn-build");
+    let Construção_Edifcios_Serie = getConstrução_Edifcios_Serie();
+    let instituir;
+    while(instituir === undefined && Construção_Edifcios_Serie.length > 0){
+        var proximo = Construção_Edifcios_Serie.shift();
+        prox = proximo.replace('main_buildlink_','');
+        if (Clicar_Upar_Edificos.hasOwnProperty(proximo)){
+            let próximo_edifício = document.getElementById(proximo);
+            var Visivel = próximo_edifício.offsetWidth > 0 || próximo_edifício.offsetHeight > 0;
+            let farm;
+            let poppercent = (Number(document.querySelector('#pop_max_label').innerText) / 100) * (Number(document.querySelector('#pop_current_label').innerText) / 100)
+            for(let i = 0; i<=30; i++){
+                if(document.getElementById(`main_buildlink_farm_${i}`) !== null){
+                    farm = document.getElementById(`main_buildlink_farm_${i}`)
+                }
+            }
+            if (Visivel){
+                instituir = próximo_edifício;
+            }else if(farm.offsetWidth > 0 || farm.offsetHeight > 0 && poppercent > 80){
+                instituir = farm;
+            }
+            if (Construção_Edificios_Ordem){
+                break;
+            }
+        }
+    }
+    return instituir;
+}
+
+function getConstrução_Edifcios_Serie() {
+    var Sequência_Construção = [];
+
+    // Edificios Inicial conforme figura: https://i.imgur.com/jPuHuHN.png
+
+//*************************** QUEST ***************************//
+    // Construção Madeira 1
+    Sequência_Construção.push("main_buildlink_wood_1");
+    // Construção Argila 1
+    Sequência_Construção.push("main_buildlink_stone_1");
+    // Construção Ferro 1
+    Sequência_Construção.push("main_buildlink_iron_1");
+    // Construção Madeira 2
+    Sequência_Construção.push("main_buildlink_wood_2");
+    // Construção Argila 2
+    Sequência_Construção.push("main_buildlink_stone_2");
+    // Construção Edificio Principal 2
+    Sequência_Construção.push("main_buildlink_main_2");
+    // Construção Madeira 3
+    Sequência_Construção.push("main_buildlink_wood_3");
+    // Construção Argila 3
+    Sequência_Construção.push("main_buildlink_stone_3");
+    // Construção Edificio Principal 3
+    Sequência_Construção.push("main_buildlink_main_3");
+    // Construção Quartel 1
+    Sequência_Construção.push("main_buildlink_barracks_1");
+    Sequência_Construção.push("main_buildlink_storage_2");
+    Sequência_Construção.push("main_buildlink_farm_2");
+    Sequência_Construção.push("main_buildlink_storage_3");
+    // Construção Madeira 4
+    Sequência_Construção.push("main_buildlink_wood_4");
+    // Construção Argila 4
+    Sequência_Construção.push("main_buildlink_stone_4");
+    // Construção Ferro 2
+    Sequência_Construção.push("main_buildlink_iron_2");
+    // Construção Ferro 3
+    Sequência_Construção.push("main_buildlink_iron_3");
+     // Construção Madeira 5
+    Sequência_Construção.push("main_buildlink_wood_5");
+    // Construção Argila 5
+    Sequência_Construção.push("main_buildlink_stone_5");
+    // Construção Edificio Principal 4
+    Sequência_Construção.push("main_buildlink_main_4");
+    // Construção Edificio Principal 5
+    Sequência_Construção.push("main_buildlink_main_5");
+    // Construção Ferreiro 1
+    Sequência_Construção.push("main_buildlink_smith_1");
+    // Construção Muralha 1
+    Sequência_Construção.push("main_buildlink_wall_1");
+    // Construção Mercado 1
+    Sequência_Construção.push("main_buildlink_market_1");
+    // Construção Armazém 4
+    Sequência_Construção.push("main_buildlink_storage_4");
+    // Construção Armazém 5
+    Sequência_Construção.push("main_buildlink_storage_5");
+    // Construção Armazém 6
+    Sequência_Construção.push("main_buildlink_storage_6");
+    // Construção Quartel 3
+    Sequência_Construção.push("main_buildlink_barracks_2");
+    // Construção Quartel 3
+    Sequência_Construção.push("main_buildlink_barracks_3");
+    // Construção Estatua 1
+    Sequência_Construção.push("main_buildlink_statue_1");
+    // Construção Esconderijo 2
+    Sequência_Construção.push("main_buildlink_hide_2");
+    // Construção Esconderijo 3
+    Sequência_Construção.push("main_buildlink_hide_3");
+    // Construção Madeira 6
+    Sequência_Construção.push("main_buildlink_wood_6");
+    // Construção Argila 6
+    Sequência_Construção.push("main_buildlink_stone_6");
+    // Construção Madeira 7
+    Sequência_Construção.push("main_buildlink_wood_7");
+    // Construção Argila 7
+    Sequência_Construção.push("main_buildlink_stone_7");
+    // Construção Ferro 4
+    Sequência_Construção.push("main_buildlink_iron_4");
+    // Construção Ferro 5
+    Sequência_Construção.push("main_buildlink_iron_5");
+    // Construção Ferro 6
+    Sequência_Construção.push("main_buildlink_iron_6");
+    // Construção Madeira 8
+    Sequência_Construção.push("main_buildlink_wood_8");
+    // Construção Argila 8
+    Sequência_Construção.push("main_buildlink_stone_8");
+    // Construção Ferro 7
+    Sequência_Construção.push("main_buildlink_iron_7");
+     // Construção Madeira 9
+    Sequência_Construção.push("main_buildlink_wood_9");
+    // Construção Argila 9
+    Sequência_Construção.push("main_buildlink_stone_9");
+       // Construção Madeira 10
+    Sequência_Construção.push("main_buildlink_wood_10");
+    // Construção Argila 10
+    Sequência_Construção.push("main_buildlink_stone_10");
+
+//---------------- https://image.prntscr.com/image/oMwaEPpCR2_1XaHzlMaobg.png -  -----------------//
+
+     // Construção Madeira 11
+    Sequência_Construção.push("main_buildlink_wood_11");
+    // Construção Argila 11
+    Sequência_Construção.push("main_buildlink_stone_11");
+     // Construção Madeira 12
+    Sequência_Construção.push("main_buildlink_wood_12");
+    // Construção Argila 12
+    Sequência_Construção.push("main_buildlink_stone_12");
+    // Construção Armazém 7
+    Sequência_Construção.push("main_buildlink_storage_7");
+    // Construção Ferro 8
+    Sequência_Construção.push("main_buildlink_iron_8");
+     // Construção Armazém 8
+    Sequência_Construção.push("main_buildlink_storage_8");
+    // Construção Ferro 9
+    Sequência_Construção.push("main_buildlink_iron_9");
+    // Construção Ferro 10
+    Sequência_Construção.push("main_buildlink_iron_10");
+
+//---------------- https://image.prntscr.com/image/n6tBlPGORAq9RmqSVccTKg.png -  -----------------//
+
+     // Construção Madeira 13
+    Sequência_Construção.push("main_buildlink_wood_13");
+    // Construção Argila 13
+    Sequência_Construção.push("main_buildlink_stone_13");
+    // Construção Ferro 11
+    Sequência_Construção.push("main_buildlink_iron_11");
+    // Construção Armazém 9
+    Sequência_Construção.push("main_buildlink_storage_9");
+    // Construção Armazém 10
+    Sequência_Construção.push("main_buildlink_storage_10");
+    // Construção Fazenda 3
+    Sequência_Construção.push("main_buildlink_farm_3");
+    // Construção Fazenda 4
+    Sequência_Construção.push("main_buildlink_farm_4");
+    // Construção Fazenda 5
+    Sequência_Construção.push("main_buildlink_farm_5");
+    // Construção Ferro 12
+    Sequência_Construção.push("main_buildlink_iron_12");
+
+//---------------- https://image.prntscr.com/image/ERCLrS5cT32ntSv1IevLUg.png -  -----------------//
+
+    // Construção Edificio Principal 6
+    Sequência_Construção.push("main_buildlink_main_6");
+    // Construção Edificio Principal 7
+    Sequência_Construção.push("main_buildlink_main_7");
+    // Construção Quartel 4
+    Sequência_Construção.push("main_buildlink_barracks_4");
+    // Construção Quartel 5
+    Sequência_Construção.push("main_buildlink_barracks_5");
+    // Construção Fazenda 6
+    Sequência_Construção.push("main_buildlink_farm_6");
+    // Construção Fazenda 7
+    Sequência_Construção.push("main_buildlink_farm_7");
+    // Construção Muralha 2
+    Sequência_Construção.push("main_buildlink_wall_2");
+    // Construção Muralha 3
+    Sequência_Construção.push("main_buildlink_wall_3");
+    // Construção Muralha 4
+    Sequência_Construção.push("main_buildlink_wall_4");
+    // Construção Muralha 5
+    Sequência_Construção.push("main_buildlink_wall_5");
+    // Construção Ferro 13
+    Sequência_Construção.push("main_buildlink_iron_13");
+    // Construção Ferro 14
+    Sequência_Construção.push("main_buildlink_iron_14");
+
+//---------------- https://image.prntscr.com/image/V15bxH7KSFa5gu3d02yYIQ.png -  -----------------//
+
+    // Construção Fazenda 8
+    Sequência_Construção.push("main_buildlink_farm_8");
+    // Construção Fazenda 9
+    Sequência_Construção.push("main_buildlink_farm_9");
+
+//---------------- https://image.prntscr.com/image/3pioalUXRK6AH9wNYnRxyQ.png -  -----------------//
+
+
+
+    // Construção Ferreiro 2
+    Sequência_Construção.push("main_buildlink_smith_2");
+    // Construção Ferreiro 3
+    Sequência_Construção.push("main_buildlink_smith_3");
+    // Construção Ferreiro 4
+    Sequência_Construção.push("main_buildlink_smith_4");
+    // Construção Ferreiro 5
+    Sequência_Construção.push("main_buildlink_smith_5");
+    // Construção Mercado 2
+    Sequência_Construção.push("main_buildlink_market_2");
+    // Construção Mercado 3
+    Sequência_Construção.push("main_buildlink_market_3");
+    // Construção Edificio Principal 8
+    Sequência_Construção.push("main_buildlink_main_8");
+    // Construção Edificio Principal 9
+    Sequência_Construção.push("main_buildlink_main_9");
+    // Construção Edificio Principal 10
+    Sequência_Construção.push("main_buildlink_main_10");
+    // Construção Estabulo 1
+    Sequência_Construção.push("main_buildlink_stable_1");
+    // Construção Estabulo 2
+    Sequência_Construção.push("main_buildlink_stable_2");
+    // Construção Estabulo 3
+    Sequência_Construção.push("main_buildlink_stable_3");
+    // Construção Armazém 11
+    Sequência_Construção.push("main_buildlink_storage_11");
+    // Construção Fazenda 10
+    Sequência_Construção.push("main_buildlink_farm_10");
+    // Construção Fazenda 11
+    Sequência_Construção.push("main_buildlink_farm_11");
+    // Construção Fazenda 12
+    Sequência_Construção.push("main_buildlink_farm_12");
+    // Construção Armazém 12
+    Sequência_Construção.push("main_buildlink_storage_12");
+     // Construção Madeira 14
+    Sequência_Construção.push("main_buildlink_wood_14");
+    // Construção Argila 14
+    Sequência_Construção.push("main_buildlink_stone_14");
+     // Construção Madeira 15
+    Sequência_Construção.push("main_buildlink_wood_15");
+    // Construção Argila 15
+    Sequência_Construção.push("main_buildlink_stone_15");
+    // Construção Armazém 13
+    Sequência_Construção.push("main_buildlink_storage_13");
+    // Construção Edificio Principal 11
+    Sequência_Construção.push("main_buildlink_main_11");
+    // Construção Muralha 6
+    Sequência_Construção.push("main_buildlink_wall_6");
+    // Construção Muralha 7
+    Sequência_Construção.push("main_buildlink_wall_7");
+    // Construção Muralha 8
+    Sequência_Construção.push("main_buildlink_wall_8");
+    // Construção Muralha 9
+    Sequência_Construção.push("main_buildlink_wall_9");
+    // Construção Armazém 14
+    Sequência_Construção.push("main_buildlink_storage_14");
+    // Construção Quartel 6
+    Sequência_Construção.push("main_buildlink_barracks_6");
+    // Construção Quartel 7
+    Sequência_Construção.push("main_buildlink_barracks_7");
+    // Construção Quartel 8
+    Sequência_Construção.push("main_buildlink_barracks_8");
+    // Construção Quartel 9
+    Sequência_Construção.push("main_buildlink_barracks_9");
+    // Construção Armazém 15
+    Sequência_Construção.push("main_buildlink_storage_15");
+    // Construção Ferreiro 6
+    Sequência_Construção.push("main_buildlink_smith_6");
+    // Construção Ferreiro 7
+    Sequência_Construção.push("main_buildlink_smith_7");
+    // Construção Ferreiro 8
+    Sequência_Construção.push("main_buildlink_smith_8");
+    // Construção Edificio Principal 12
+    Sequência_Construção.push("main_buildlink_main_12");
+    // Construção Armazém 16
+    Sequência_Construção.push("main_buildlink_storage_16");
+    // Construção Armazém 17
+    Sequência_Construção.push("main_buildlink_storage_17");
+    // Construção Edificio Principal 13
+    Sequência_Construção.push("main_buildlink_main_13");
+    // Construção Fazenda 13
+    Sequência_Construção.push("main_buildlink_farm_13");
+    // Construção Fazenda 14
+    Sequência_Construção.push("main_buildlink_farm_14");
+    // Construção Mercado 4
+    Sequência_Construção.push("main_buildlink_market_4");
+    // Construção Mercado 5
+    Sequência_Construção.push("main_buildlink_market_5");
+    // Construção Mercado 6
+    Sequência_Construção.push("main_buildlink_market_6");
+    // Construção Edificio Principal 14
+    Sequência_Construção.push("main_buildlink_main_14");
+    // Construção Madeira 16
+    Sequência_Construção.push("main_buildlink_wood_16");
+    // Construção Argila 16
+    Sequência_Construção.push("main_buildlink_stone_16");
+    // Construção Edificio Principal 15
+    Sequência_Construção.push("main_buildlink_main_15");
+    // Construção Madeira 17
+    Sequência_Construção.push("main_buildlink_wood_17");
+    // Construção Argila 17
+    Sequência_Construção.push("main_buildlink_stone_17");
+    // Construção Edificio Principal 16
+    Sequência_Construção.push("main_buildlink_main_16");
+    // Construção Quartel 10
+    Sequência_Construção.push("main_buildlink_barracks_10");
+    // Construção Ferreiro 9
+    Sequência_Construção.push("main_buildlink_smith_9");
+    // Construção Ferreiro 10
+    Sequência_Construção.push("main_buildlink_smith_10");
+    // Construção Oficina 1
+    Sequência_Construção.push("main_buildlink_garage_1");
+    // Construção Oficina 2
+    Sequência_Construção.push("main_buildlink_garage_2");
+    // Construção Oficina 3
+    Sequência_Construção.push("main_buildlink_garage_3");
+    // Construção Estabulo 4
+    Sequência_Construção.push("main_buildlink_stable_4");
+    // Construção Estabulo 4
+    Sequência_Construção.push("main_buildlink_stable_5");
+    // Construção Estabulo 4
+    Sequência_Construção.push("main_buildlink_stable_6");
+    // Construção Estabulo 4
+    Sequência_Construção.push("main_buildlink_stable_7");
+    // Construção Armazém 18
+    Sequência_Construção.push("main_buildlink_storage_18");
+    // Construção Armazém 19
+    Sequência_Construção.push("main_buildlink_storage_19");
+    // Construção Quartel 11
+    Sequência_Construção.push("main_buildlink_barracks_11");
+    // Construção Quartel 12
+    Sequência_Construção.push("main_buildlink_barracks_12");
+    // Construção Ferro 15
+    Sequência_Construção.push("main_buildlink_iron_15");
+    // Construção Ferro 16
+    Sequência_Construção.push("main_buildlink_iron_16");
+    // Construção Fazenda 15
+    Sequência_Construção.push("main_buildlink_farm_15");
+    // Construção Fazenda 16
+    Sequência_Construção.push("main_buildlink_farm_16");
+    // Construção Muralha 10
+    Sequência_Construção.push("main_buildlink_wall_10");
+    // Construção Fazenda 17
+    Sequência_Construção.push("main_buildlink_farm_17");
+    // Construção Ferreiro 11
+    Sequência_Construção.push("main_buildlink_smith_11");
+    // Construção Muralha 11
+    Sequência_Construção.push("main_buildlink_wall_11");
+    // Construção Fazenda 18
+    Sequência_Construção.push("main_buildlink_farm_18");
+    // Construção Muralha 12
+    Sequência_Construção.push("main_buildlink_wall_12");
+    // Construção Mercado 7
+    Sequência_Construção.push("main_buildlink_market_7");
+    // Construção Mercado 8
+    Sequência_Construção.push("main_buildlink_market_8");
+    // Construção Mercado 9
+    Sequência_Construção.push("main_buildlink_market_9");
+    // Construção Ferreiro 12
+    Sequência_Construção.push("main_buildlink_smith_12");
+    // Construção Mercado 10
+    Sequência_Construção.push("main_buildlink_market_10");
+     // Construção Madeira 18
+    Sequência_Construção.push("main_buildlink_wood_18");
+    // Construção Argila 18
+    Sequência_Construção.push("main_buildlink_stone_18");
+    // Construção Ferreiro 13
+    Sequência_Construção.push("main_buildlink_smith_13");
+     // Construção Madeira 19
+    Sequência_Construção.push("main_buildlink_wood_19");
+    // Construção Argila 19
+    Sequência_Construção.push("main_buildlink_stone_19");
+    // Construção Fazenda 19
+    Sequência_Construção.push("main_buildlink_farm_19");
+    // Construção Ferreiro 14
+    Sequência_Construção.push("main_buildlink_smith_14");
+    // Construção Muralha 13
+    Sequência_Construção.push("main_buildlink_wall_13");
+    // Construção Ferro 16
+    Sequência_Construção.push("main_buildlink_iron_16");
+    // Construção Ferro 17
+    Sequência_Construção.push("main_buildlink_iron_17");
+    // Construção Ferreiro 15
+    Sequência_Construção.push("main_buildlink_smith_15");
+    // Construção Edificio Principal 17
+    Sequência_Construção.push("main_buildlink_main_17");
+    // Construção Edificio Principal 18
+    Sequência_Construção.push("main_buildlink_main_18");
+    // Construção Edificio Principal 19
+    Sequência_Construção.push("main_buildlink_main_19");
+    // Construção Edificio Principal 20
+    Sequência_Construção.push("main_buildlink_main_20");
+    // Construção Armazém 20
+    Sequência_Construção.push("main_buildlink_storage_20");
+    // Construção Armazém 21
+    Sequência_Construção.push("main_buildlink_storage_21");
+    // Construção Armazém 22
+    Sequência_Construção.push("main_buildlink_storage_22");
+    // Construção Armazém 23
+    Sequência_Construção.push("main_buildlink_storage_23");
+    // Construção Madeira 20
+    Sequência_Construção.push("main_buildlink_wood_20");
+    // Construção Argila 20
+    Sequência_Construção.push("main_buildlink_stone_20");
+    // Construção Ferreiro 16
+    Sequência_Construção.push("main_buildlink_smith_16");
+    // Construção Ferreiro 17
+    Sequência_Construção.push("main_buildlink_smith_17");
+    // Construção Ferro 18
+    Sequência_Construção.push("main_buildlink_iron_18");
+     // Construção Madeira 20
+    Sequência_Construção.push("main_buildlink_wood_21");
+    // Construção Argila 20
+    Sequência_Construção.push("main_buildlink_stone_21");
+    // Construção Quartel 13
+    Sequência_Construção.push("main_buildlink_barracks_13");
+    // Construção Quartel 14
+    Sequência_Construção.push("main_buildlink_barracks_14");
+    // Construção Oficina 4
+    Sequência_Construção.push("main_buildlink_garage_4");
+    // Construção Estabulo 8
+    Sequência_Construção.push("main_buildlink_stable_8");
+    // Construção Oficina 5
+    Sequência_Construção.push("main_buildlink_garage_5");
+    // Construção Estabulo 9
+    Sequência_Construção.push("main_buildlink_stable_9");
+    // Construção Fazenda 20
+    Sequência_Construção.push("main_buildlink_farm_20");
+    // Construção Muralha 14
+    Sequência_Construção.push("main_buildlink_wall_14");
+    // Construção Muralha 15
+    Sequência_Construção.push("main_buildlink_wall_15");
+    // Construção Fazenda 21
+    Sequência_Construção.push("main_buildlink_farm_21");
+    // Construção Armazém 24
+    Sequência_Construção.push("main_buildlink_storage_24");
+    // Construção Ferro 19
+    Sequência_Construção.push("main_buildlink_iron_19");
+    // Construção Madeira 21
+    Sequência_Construção.push("main_buildlink_wood_21");
+    // Construção Argila 21
+    Sequência_Construção.push("main_buildlink_stone_21");
+    // Construção Madeira 22
+    Sequência_Construção.push("main_buildlink_wood_22");
+    // Construção Argila 22
+    Sequência_Construção.push("main_buildlink_stone_22");
+    // Construção Armazém 25
+    Sequência_Construção.push("main_buildlink_storage_25");
+    // Construção Madeira 23
+    Sequência_Construção.push("main_buildlink_wood_23");
+    // Construção Argila 23
+    Sequência_Construção.push("main_buildlink_stone_23");
+    // Construção Ferro 20
+    Sequência_Construção.push("main_buildlink_iron_20");
+    // Construção Ferro 21
+    Sequência_Construção.push("main_buildlink_iron_21");
+    // Construção Ferro 22
+    Sequência_Construção.push("main_buildlink_iron_22");
+    // Construção Ferreiro 18
+    Sequência_Construção.push("main_buildlink_smith_18");
+    // Construção Ferreiro 19
+    Sequência_Construção.push("main_buildlink_smith_19");
+    // Construção Ferreiro 20
+    Sequência_Construção.push("main_buildlink_smith_20");
+    // Construção Academia
+    Sequência_Construção.push("main_buildlink_snob_1");
+    // Construção Oficina 6
+    Sequência_Construção.push("main_buildlink_garage_6");
+    // Construção Estabulo 10
+    Sequência_Construção.push("main_buildlink_stable_10");
+    // Construção Estabulo 11
+    Sequência_Construção.push("main_buildlink_stable_11");
+    // Construção Quartel 15
+    Sequência_Construção.push("main_buildlink_barracks_15");
+    // Construção Quartel 16
+    Sequência_Construção.push("main_buildlink_barracks_16");
+    // Construção Fazenda 22
+    Sequência_Construção.push("main_buildlink_farm_22");
+    // Construção Madeira 24
+    Sequência_Construção.push("main_buildlink_wood_24");
+    // Construção Argila 24
+    Sequência_Construção.push("main_buildlink_stone_24");
+    // Construção Ferro 23
+    Sequência_Construção.push("main_buildlink_iron_23");
+    // Construção Madeira 24
+    Sequência_Construção.push("main_buildlink_wood_25");
+    // Construção Argila 24
+    Sequência_Construção.push("main_buildlink_stone_25");
+    // Construção Ferro 22
+    Sequência_Construção.push("main_buildlink_iron_24");
+    // Construção Muralha 16
+    Sequência_Construção.push("main_buildlink_wall_16");
+    // Construção Muralha 17
+    Sequência_Construção.push("main_buildlink_wall_17");
+    // Construção Muralha 18
+    Sequência_Construção.push("main_buildlink_wall_18");
+    // Construção Fazenda 23
+    Sequência_Construção.push("main_buildlink_farm_23");
+    // Construção Fazenda 24
+    Sequência_Construção.push("main_buildlink_farm_24");
+    // Construção Fazenda 25
+    Sequência_Construção.push("main_buildlink_farm_25");
+    // Construção Mercado 11
+    Sequência_Construção.push("main_buildlink_market_11");
+    // Construção Mercado 12
+    Sequência_Construção.push("main_buildlink_market_12");
+    // Construção Mercado 13
+    Sequência_Construção.push("main_buildlink_market_13");
+    // Construção Mercado 14
+    Sequência_Construção.push("main_buildlink_market_14");
+    // Construção Armazém 26
+    Sequência_Construção.push("main_buildlink_storage_26");
+    // Construção Muralha 19
+    Sequência_Construção.push("main_buildlink_wall_19");
+    // Construção Armazém 27
+    Sequência_Construção.push("main_buildlink_storage_27");
+    // Construção Armazém 28
+    Sequência_Construção.push("main_buildlink_storage_28");
+    // Construção Muralha 20
+    Sequência_Construção.push("main_buildlink_wall_20");
+    // Construção Madeira 26
+    Sequência_Construção.push("main_buildlink_wood_26");
+    // Construção Argila 26
+    Sequência_Construção.push("main_buildlink_stone_26");
+    // Construção Ferro 25
+    Sequência_Construção.push("main_buildlink_iron_25");
+    // Construção Armazém 29
+    Sequência_Construção.push("main_buildlink_storage_29");
+    // Construção Armazém 30
+    Sequência_Construção.push("main_buildlink_storage_30");
+    // Construção Fazenda 26
+    Sequência_Construção.push("main_buildlink_farm_26");
+    // Construção Fazenda 27
+    Sequência_Construção.push("main_buildlink_farm_27");
+    // Construção Fazenda 28
+    Sequência_Construção.push("main_buildlink_farm_28");
+    // Construção Fazenda 29
+    Sequência_Construção.push("main_buildlink_farm_29");
+    // Construção Fazenda 30
+    Sequência_Construção.push("main_buildlink_farm_30");
+    // Construção Oficina 7
+    Sequência_Construção.push("main_buildlink_garage_7");
+    // Construção Estabulo 12
+    Sequência_Construção.push("main_buildlink_stable_12");
+    // Construção Oficina 8
+    Sequência_Construção.push("main_buildlink_garage_8");
+    // Construção Estabulo 13
+    Sequência_Construção.push("main_buildlink_stable_13");
+    // Construção Edificio Principal 21
+    Sequência_Construção.push("main_buildlink_main_21");
+    // Construção Oficina 9
+    Sequência_Construção.push("main_buildlink_garage_9");
+    // Construção Estabulo 14
+    Sequência_Construção.push("main_buildlink_stable_14");
+    // Construção Edificio Principal 22
+    Sequência_Construção.push("main_buildlink_main_22");
+    // Construção Oficina 10
+    Sequência_Construção.push("main_buildlink_garage_10");
+    // Construção Estabulo 15
+    Sequência_Construção.push("main_buildlink_stable_15");
+    // Construção Quartel 17
+    Sequência_Construção.push("main_buildlink_barracks_17");
+    // Construção Quartel 18
+    Sequência_Construção.push("main_buildlink_barracks_18");
+    // Construção Quartel 19
+    Sequência_Construção.push("main_buildlink_barracks_19");
+    // Construção Quartel 20
+    Sequência_Construção.push("main_buildlink_barracks_20");
+    // Construção Madeira 27
+    Sequência_Construção.push("main_buildlink_wood_27");
+    // Construção Argila 27
+    Sequência_Construção.push("main_buildlink_stone_27");
+    // Construção Ferro 26
+    Sequência_Construção.push("main_buildlink_iron_26");
+    // Construção Madeira 28
+    Sequência_Construção.push("main_buildlink_wood_28");
+    // Construção Argila 28
+    Sequência_Construção.push("main_buildlink_stone_28");
+    // Construção Quartel 21
+    Sequência_Construção.push("main_buildlink_barracks_21");
+    // Construção Ferro 27
+    Sequência_Construção.push("main_buildlink_iron_27");
+    // Construção Madeira 29
+    Sequência_Construção.push("main_buildlink_wood_29");
+    // Construção Argila 29
+    Sequência_Construção.push("main_buildlink_stone_29");
+    // Construção Quartel 22
+    Sequência_Construção.push("main_buildlink_barracks_22");
+    // Construção Ferro 28
+    Sequência_Construção.push("main_buildlink_iron_28");
+    // Construção Madeira 30
+    Sequência_Construção.push("main_buildlink_wood_30");
+    // Construção Argila 30
+    Sequência_Construção.push("main_buildlink_stone_30");
+    // Construção Quartel 23
+    Sequência_Construção.push("main_buildlink_barracks_23");
+    // Construção Ferro 29
+    Sequência_Construção.push("main_buildlink_iron_29");
+    // Construção Ferro 30
+    Sequência_Construção.push("main_buildlink_iron_30");
+    // Construção Mercado 15
+    Sequência_Construção.push("main_buildlink_market_15");
+    // Construção Mercado 16
+    Sequência_Construção.push("main_buildlink_market_16");
+    // Construção Quartel 24
+    Sequência_Construção.push("main_buildlink_barracks_24");
+    // Construção Mercado 17
+    Sequência_Construção.push("main_buildlink_market_17");
+    // Construção Quartel 25
+    Sequência_Construção.push("main_buildlink_barracks_25");
+    // Construção Oficina 10
+    Sequência_Construção.push("main_buildlink_garage_11");
+    // Construção Estabulo 15
+    Sequência_Construção.push("main_buildlink_stable_16");
+    // Construção Oficina 10
+    Sequência_Construção.push("main_buildlink_garage_12");
+    // Construção Estabulo 15
+    Sequência_Construção.push("main_buildlink_stable_17");
+    // Construção Oficina 10
+    Sequência_Construção.push("main_buildlink_garage_13");
+    // Construção Estabulo 15
+    Sequência_Construção.push("main_buildlink_stable_18");
+    // Construção Oficina 10
+    Sequência_Construção.push("main_buildlink_garage_14");
+    // Construção Estabulo 15
+    Sequência_Construção.push("main_buildlink_stable_19");
+    // Construção Oficina 10
+    Sequência_Construção.push("main_buildlink_garage_15");
+    // Construção Estabulo 15
+    Sequência_Construção.push("main_buildlink_stable_20");
+    // Construção Edificio Principal 23
+    Sequência_Construção.push("main_buildlink_main_23");
+    // Construção Edificio Principal 24
+    Sequência_Construção.push("main_buildlink_main_24");
+    // Construção Edificio Principal 25
+    Sequência_Construção.push("main_buildlink_main_25");
+    // Construção Edificio Principal 26
+    Sequência_Construção.push("main_buildlink_main_26");
+    // Construção Edificio Principal 27
+    Sequência_Construção.push("main_buildlink_main_27");
+    // Construção Edificio Principal 28
+    Sequência_Construção.push("main_buildlink_main_28");
+    // Construção Edificio Principal 29
+    Sequência_Construção.push("main_buildlink_main_29");
+    // Construção Edificio Principal 30
+    Sequência_Construção.push("main_buildlink_main_30");
+    // Construção Mercado 18
+    Sequência_Construção.push("main_buildlink_market_18");
+    // Construção Mercado 19
+    Sequência_Construção.push("main_buildlink_market_19");
+    // Construção Mercado 20
+    Sequência_Construção.push("main_buildlink_market_20");
+    // Construção Mercado 21
+    Sequência_Construção.push("main_buildlink_market_21");
+    // Construção Mercado 22
+    Sequência_Construção.push("main_buildlink_market_22");
+    // Construção Esconderijo 4
+    Sequência_Construção.push("main_buildlink_hide_4");
+    // Construção Mercado 23
+    Sequência_Construção.push("main_buildlink_market_23");
+    // Construção Esconderijo 5
+    Sequência_Construção.push("main_buildlink_hide_5");
+    // Construção Mercado 24
+    Sequência_Construção.push("main_buildlink_market_24");
+    // Construção Mercado 25
+    Sequência_Construção.push("main_buildlink_market_25");
+    // Construção Esconderijo 3
+    Sequência_Construção.push("main_buildlink_hide_6");
+    // Construção Esconderijo 3
+    Sequência_Construção.push("main_buildlink_hide_7");
+    // Construção Esconderijo 8
+    Sequência_Construção.push("main_buildlink_hide_8");
+    // Construção Esconderijo 9
+    Sequência_Construção.push("main_buildlink_hide_9");
+    // Construção Esconderijo 10
+    Sequência_Construção.push("main_buildlink_hide_10");
+
+    return Sequência_Construção;
+
+}
+
+document.querySelector('.shadedBG').appendChild(createEle('td',undefined,'opcoestd content-border border-frame-gold-red'))
+document.querySelector('.opcoestd').innerHTML = html();
+document.querySelector('.opcoestd').style.cssText = 'margin-top: 200px;'+'position: absolute;'
+
+recomp = JSON.parse(localStorage.getItem('Recomp'))
+if(recomp === null || recomp === undefined){recomp = 0;}
+ss = JSON.parse(localStorage.getItem('TimerRodando2'))
+
+function timer1(segundos){
+    const data = new Date(segundos * 1000);
+    return data.toLocaleTimeString('pt-BR', { hour12: false, timeZone: 'UTC' })
+}
+if(pontos !== null || pontos !== undefined){
+    pontos = JSON.parse(localStorage.getItem('PontosComeco'));
+    pontosC = parseInt(document.querySelector('#rank_points').innerHTML) - pontos
+    document.querySelector('.pontosD').innerHTML = `<h5>${pontosC}</h5>`;
+}
+if(pontos === null || pontos === undefined){
+    pontos = parseInt(document.querySelector('#rank_points').innerHTML);
+    let stringJSON2 = JSON.stringify(pontos);
+    localStorage.setItem('PontosComeco', stringJSON2);
+    pontosC = parseInt(document.querySelector('#rank_points').innerHTML) - pontos;
+    document.querySelector('.pontosD').innerHTML = `<h5>${pontosC}</h5>`;
+}
+function inicarTimer(){
+    hora = setInterval(function(){
+        ss++
+        timerRodando = JSON.stringify(ss);
+        localStorage.setItem('TimerRodando2', timerRodando);
+        document.querySelector('.StatusLab').innerHTML = '<h5>RODANDO</h5>';
+        document.querySelector('.tempoD').innerHTML = `<h5>${tempoFarmgod}</h5>`;
+        document.querySelector('.StatusLab').style.cssText += 'color: green;'
+        if(pontos !== null || pontos !== undefined){
+            pontos = JSON.parse(localStorage.getItem('PontosComeco'));
+            pontosC = parseInt(document.querySelector('#rank_points').innerText.replace('.','')) - pontos
+            document.querySelector('.pontosD').innerHTML = `<h5>${pontosC}</h5>`;
+        }
+    },1000)
+}
+
+let htm = `<div class="popup_box show" id="popup_box_twcheese-scavenge-preferences-popup" style="width: 366px;">
+    <a class="popup_box_close tooltip-delayed" href="#" data-title="Fechado :: atalho de teclado: <b>Esc</b>">&nbsp;</a>
+    <div class="popup_box_content">
+        <div class="qrcode">
+            <h3>Donate - Pix</h3>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHe_PtDQ7eaDxh_gU2TW5-We9tMWcmAEqQkWbGYGFSkAZHYuOz2_IHiGaSoi4JHpQhuE5mEnNoaaYmHiiy2tBgKyuV4cNEivqtGedlOU6HkVMNmvkn-_-e5fPgiHdn7hHuMQf6itQSvT3oeq-1q7qJw=w300-h301-s-no-gm?authuser=0" width="366" heigth="366">
+        </div></div></div><div class="fader"></div>`
+
+
+document.querySelector('.donate1').addEventListener('click',function(){
+    document.querySelector('#ds_body').appendChild(createEle('div',htm,'popup_box_container'))
+    createClose();
+})
+
+function createClose(){
+    document.querySelector('.popup_box_close').addEventListener('click',function(){
+        document.querySelector('.popup_box_container').remove();
+    })
+}
+
+//*************************** CRIANDO OS ELEMENTOS CONFIGURANDO E DANDO FUNÇÃO ***************************//
+function html(){
+    let html = `<td class="opcoestd content-border border-frame-gold-red" style="margin-top: 200px; position: absolute;">
+      <table class="vis">
+            <tbody><tr class="border-frame-gold-red">
+              <td style="text-align: center; padding-top: 5px; padding-bottom: 2px; width: 290px" class="avisos" colspan="6"><h3>[Auto Up]</h3></td>
+            </tr>
+            <tr>
+              <td style="text-align: center; width: 5px;"><span class="icon header time" title="Tempo até ir pro farm."></span></td>
+              <td class="tempoD" style="text-align: center; width: 120px;"><h5>${tempoFarmgod}</h5></td>
+              <td style="text-align: center; width: 25px;"><img src="/graphic//buildings/market.png" title="Total de pontos recebidos des de iniciar."></img></td>
+              <td class="pontosD" style="text-align: center; width: 60px;"><h5>${pontosC}</h5></td>
+              <td style="text-align: center; width: 25px;"><img src="/graphic//buildings/market.png" title="Total de recompensas recebida."></img></td>
+              <td class="recompD" style="text-align: center"><h5>${recomp}</h5></td>
+            </tr>
+            <tr>
+              <td colspan="6" style="text-align: center; padding: 10px; width: 270px"><label class="StatusLab"><h5>PARADO</h5></label></td>
+            </tr>
+            <tr>
+              <td colspan="6" style="text-align: center; padding-bottom: 5px"><label class="statusLab">...</label></td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 10px;" colspan="6">
+    <button class="iniciarBtn btn" style="margin-right: 10px;">Iniciar</button>
+    <button class="pausarBtn btn" style="margin-right: 10px;">Pausar</button>
+    <button class="pararBtn btn" style="margin-right: 10px;">Sim</button>
+    <button class="ordemBtn btn" style="margin-right: 10px;">Sim</button>
+    <button class="questBtn btn" title="Priorizar Quest: Desligado.">Não</button>
+    <br><br>
+    <span style="float: right; font-size: xx-small; font-weight: normal;">Updated by WFox: v1.2</span>
+    <span style="float: left; font-size: xx-small; font-weight: normal;"><a href="#" class="donate1">Donate</a></span>
+</td>
+            </tr>
+          </tbody></table>
+        </td>`
+    return html;
+    }
+
+
+function createEle(ele,texto = '',clas,titulo){
+    let EleCriado = document.createElement(ele);
+    EleCriado.innerHTML = texto;
+    if(clas !== undefined) EleCriado.classList = clas;
+    if(titulo !== undefined) EleCriado.title = titulo
+    return EleCriado;
+}
+
+document.querySelector('.iniciarBtn').addEventListener('click',function(){
+    let estado = JSON.parse(localStorage.getItem('Estado'));
+    let stringJSON = JSON.stringify(1);
+    localStorage.setItem('Estado', stringJSON);
+    verifica();
+})
+document.querySelector('.pausarBtn').addEventListener('click',function(){
+    let stringJSON = JSON.stringify(0);
+    localStorage.setItem('Estado', stringJSON);
+    clearInterval(principal);
+    clearInterval(secundario);
+    verifica();
+})
+document.querySelector('.pararBtn').addEventListener('click',function(){
+    verifica3();
+    //window.location.reload();
+})
+document.querySelector('.ordemBtn').addEventListener('click',function(){
+    verifica1();
+})
+document.querySelector('.questBtn').addEventListener('click',function(){
+    verifica2();
+})
+
+function verifica3(){
+    botao3 = JSON.parse(localStorage.getItem('Farm'));
+    if(botao3 === 'Não'){
+        try{
+            farmgodFox = true;
+            let stringJSON = JSON.stringify('Sim');
+            localStorage.setItem('Farm', stringJSON);
+            document.querySelector('.pararBtn').innerText = 'Sim'
+            document.querySelector('.pararBtn').title = 'Farm Ativado'
+            farmverify();
+        }catch{
+            console.log('Error: Variavel farmgodFox nao definida.')
+        }
+    }else{
+        try{
+            farmgodFox = false;
+            let stringJSON = JSON.stringify('Não');
+            localStorage.setItem('Farm', stringJSON);
+            document.querySelector('.pararBtn').innerText = 'Não'
+            document.querySelector('.pararBtn').title = 'Farm Desativado'
+            farmverify();
+        }catch{
+            console.log('Error: Variavel farmgodFox nao definida.')
+        }
+    }
+}
+
+function verifica(){
+    if(localStorage.getItem('Estado') === '1'){
+        startScript();
+        inicarTimer();
+        Secundario();
+        document.querySelector('.StatusLab').innerHTML = '<h5>RODANDO</h5>';
+        document.querySelector('.StatusLab').style.cssText += 'color: green;'
+    }else if(localStorage.getItem('Estado') === '0'){
+        document.querySelector('.StatusLab').innerHTML = '<h5>PAUSADO</h5>';
+        document.querySelector('.StatusLab').style.cssText += 'color: red;'
+        clearInterval(hora);
+    }
+}
+if(botao === undefined || botao === null || botao === 'Sim'){
+    Construção_Edificios_Ordem = true;
+    let stringJSON = JSON.stringify('Sim');
+    localStorage.setItem('Ordem', stringJSON);
+    document.querySelector('.ordemBtn').innerText = 'Sim'
+    document.querySelector('.ordemBtn').title = 'Construir em Ordem'
+}else if(botao === 'Não'){
+    Construção_Edificios_Ordem = false;
+    document.querySelector('.ordemBtn').innerText = 'Não'
+    document.querySelector('.ordemBtn').title = 'Construir Qualquer Edificio Disponivel'
+}
+if(botao2 === undefined || botao2 === null){
+    Construção_Edificios_Quest = false;
+    let stringJSON = JSON.stringify('Não');
+    localStorage.setItem('Quests', stringJSON);
+    document.querySelector('.questBtn').innerText = 'Não'
+    document.querySelector('.questBtn').title = 'Priorizar Quest: Desligado.'
+}else if(botao2 === 'Sim'){
+    Construção_Edificios_Quest = true;
+    document.querySelector('.questBtn').innerText = 'Sim'
+    document.querySelector('.questBtn').title = 'Priorizar Quest: Ligado.'
+}
+if(botao3 === undefined || botao3 === null){
+    try{
+        farmgodFox = true;
+        let stringJSON = JSON.stringify('Sim');
+        localStorage.setItem('Farm', stringJSON);
+        document.querySelector('.pararBtn').innerText = 'Sim'
+        document.querySelector('.pararBtn').title = 'Farm Ativado'
+        farmverify();
+    }catch{
+        console.log('Error: Variavel farmgodFox nao definida.')
+    }
+}else if(botao3 === 'Não'){
+    try{
+        farmgodFox = false;
+        document.querySelector('.pararBtn').innerText = 'Não'
+        document.querySelector('.pararBtn').title = 'Farm Desativado'
+        farmverify();
+    }catch{
+        console.log('Error: Variavel farmgodFox nao definida.')
+    }
+}else if(botao3 === 'Sim'){
+    try{
+        farmgodFox = true;
+        let stringJSON = JSON.stringify('Sim');
+        localStorage.setItem('Farm', stringJSON);
+        document.querySelector('.pararBtn').innerText = 'Sim'
+        document.querySelector('.pararBtn').title = 'Farm Ativado'
+        farmverify();
+    }catch{
+        console.log('Error: Variavel farmgodFox nao definida.')
+    }
+}
+verifica();
+
+// Comandos Futuros a serem introduzidos
+//javascript: document.getElementsByClassName('order_feature btn btn-btr btn-instant-free')[0].click();
+//javascript: document.getElementsByClassName('btn btn-confirm-yes')[0].click()
