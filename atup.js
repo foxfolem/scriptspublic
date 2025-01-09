@@ -522,7 +522,7 @@ function getConstrução_proximo_edificio() {
             }
             if (Visivel){
                 instituir = próximo_edifício;
-            }else if(farm.offsetWidth > 0 || farm.offsetHeight > 0 && poppercent > 80){
+            }else if(farm.offsetWidth > 0 && poppercent > 80 || farm.offsetHeight > 0 && poppercent > 80){
                 instituir = farm;
             }
             if (Construção_Edificios_Ordem){
