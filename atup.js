@@ -695,8 +695,6 @@ function getConstrução_Edifcios_Serie() {
     Sequência_Construção.push("main_buildlink_wall_5");
     // Construção Ferro 13
     Sequência_Construção.push("main_buildlink_iron_13");
-    // Construção Ferro 14
-    Sequência_Construção.push("main_buildlink_iron_14");
 
 //---------------- https://image.prntscr.com/image/V15bxH7KSFa5gu3d02yYIQ.png -  -----------------//
 
@@ -747,6 +745,8 @@ function getConstrução_Edifcios_Serie() {
     Sequência_Construção.push("main_buildlink_wood_14");
     // Construção Argila 14
     Sequência_Construção.push("main_buildlink_stone_14");
+    // Construção Ferro 14
+    Sequência_Construção.push("main_buildlink_iron_14");
      // Construção Madeira 15
     Sequência_Construção.push("main_buildlink_wood_15");
     // Construção Argila 15
