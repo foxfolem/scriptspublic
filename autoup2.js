@@ -57,7 +57,6 @@ async function start(){
                     let up = item.split('_')
                     let order = Number(document.querySelector(`#${vilagesid[e]}`).querySelectorAll('.queue_icon').length)
                     let nvAtual = Number(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText.split('⬆️')[0])
-                    console.log(nvAtual)
                     for(let i = 0; i < 5; i++){
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`#order_${i}`) != null){
                             //order++
