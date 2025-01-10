@@ -56,11 +56,6 @@ async function start(){
         await getSeq();
         while(true){
             for(let e = 0; e < vilagesid.length; e++){
-                if(document.querySelector(`.${vilagesid[e]}`) == null){
-                    let td = document.createElement('td');
-                    td.className = `${vilagesid[e]}`
-                    document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).appendChild(td)
-                }
                 for await(let item of seqC){
                     let up = item.split('_')
                     let order = Number(document.querySelector(`#${vilagesid[e]}`).querySelectorAll('.queue_icon').length)
@@ -74,8 +69,8 @@ async function start(){
                         }
                     }
                     if(Number(up[1]) > nvAtual && order < 5){
-                        if(document.querySelector(`.${vilagesid[e]}`).innerHTML == ''){
-                            document.querySelector(`.${vilagesid[e]}`).innerHTML = `<img src="https://dsbr.innogamescdn.com/asset/61bc21fc/graphic/buildings/${up[0]}.png">`
+                        if(!document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText.includes('⬆️')){
+                            document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText = document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText + "⬆️"
                         }
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined && document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].classList.value != 'hidden'){
