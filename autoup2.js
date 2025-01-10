@@ -99,5 +99,5 @@ async function start(){
     }
     console.log('Terminou')
 };
-setInterval(()=>{window.location.reload()},3600000)
+setInterval(()=>{window.location.reload()},1800000)
 start();
