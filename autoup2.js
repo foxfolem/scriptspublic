@@ -68,7 +68,7 @@ async function start(){
                     }
                     if(Number(up[1]) > nvAtual && order < 5){
                         if(!document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText.includes('⬆️') && document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] == undefined || !document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText.includes('⬆️') && document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].classList[0] == 'hidden'){
-                            document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerHTML = document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerHTML + `<label data-title="Proximo Up">⬆️</label>`
+                            document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerHTML = document.querySelector('#villages').querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerHTML + `<div data-title="Proximo Up">⬆️</div>`
                         }
                         console.log('Vilage: ' + vilagesid[e] + ' Up: ' + up[0] + ' Nvl Atual: ' + nvAtual + ' Nvl Up: '+ up[1]);
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0] != undefined && document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).children[0].classList.value != 'hidden'){
