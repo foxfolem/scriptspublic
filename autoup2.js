@@ -42,9 +42,6 @@ let data = new Date();
 async function start(){
     if(game_data.features.Premium.active && window.location.search.includes('mode=buildings')){
         console.log('começou')
-        let th = document.createElement('th');
-        th.innerText = 'Proximo Up'
-        document.querySelector('#buildings_table').querySelector('tr').appendChild(th);
         let vilagesid = [];
         let timetotal = 0;
         for(let i = 0; i < document.querySelectorAll('#villages')[0].children.length; i++){
@@ -60,6 +57,7 @@ async function start(){
                     let up = item.split('_')
                     let order = Number(document.querySelector(`#${vilagesid[e]}`).querySelectorAll('.queue_icon').length)
                     let nvAtual = Number(document.querySelector(`#${vilagesid[e]}`).querySelector(`.b_${up[0]}`).innerText)
+                    console.log(nvAtual)
                     for(let i = 0; i < 5; i++){
                         if(document.querySelector(`#${vilagesid[e]}`).querySelector(`#order_${i}`) != null){
                             //order++
